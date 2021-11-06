@@ -1,0 +1,135 @@
+.parrafoNosotros, .introProductos, .textoContacto {
+  border: 1px solid #828282;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #828282;
+  color: #fff;
+  box-shadow: 0px -1px 10px 5px #7d7d7d; }
+
+.contenedorNav {
+  border-radius: 20px;
+  border-bottom: 5px solid #828282;
+  border-top: 5px solid #828282; }
+  .contenedorNav ul {
+    font-size: 2rem;
+    height: fit-content; }
+  .contenedorNav .logoCabecera {
+    height: 15vh;
+    z-index: 5;
+    box-shadow: 0px -1px 10px 5px #7d7d7d; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.carousel-inner {
+  max-height: 80vh;
+  overflow: hidden;
+  border-radius: 20px; }
+
+.contenedorArticulo .iconoRepartidor {
+  height: 15vh; }
+
+.contenedorArticulo .iconoCalendario {
+  height: 15vh; }
+
+.contenedorArticulo .iconoRegalo {
+  height: 15vh; }
+
+.parrafoNosotros .primerParrafo {
+  margin: 10px; }
+
+.parrafoNosotros .segundoParrafo {
+  margin: 10px; }
+
+.articuloFoto .fotoEdgar {
+  height: 20vh;
+  box-shadow: 0px -1px 24px 0px #7d7d7d; }
+
+.articuloFoto .fotoBaso {
+  height: 20vh;
+  box-shadow: 0px -1px 24px 0px #7d7d7d; }
+
+.articuloFoto .fotoJu {
+  height: 20vh;
+  box-shadow: 0px -1px 24px 0px #7d7d7d; }
+
+.articuloFoto .fotoDeby {
+  height: 20vh;
+  box-shadow: 0px -1px 24px 0px #7d7d7d; }
+
+/*PRODUCTOS*/
+.imgProductos {
+  overflow: hidden;
+  border-radius: 20px; }
+
+.introProductos .textoProductos {
+  margin: 10px; }
+
+.listaProducto .itemProducto {
+  list-style: none; }
+
+.listaProducto li {
+  font-size: 1.2rem; }
+
+.articuloTabla .articuloC2P3C {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  box-shadow: 0px -1px 10px 5px #7d7d7d;
+  border-radius: 20px;
+  padding: 2px; }
+
+.articuloTabla .articuloC4P6C {
+  text-align: center;
+  color: #fff;
+  background-color: blue;
+  box-shadow: 0px -1px 10px 5px #7d7d7d;
+  border-radius: 20px;
+  padding: 2px; }
+
+.articuloTabla .articuloC8P10C {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  box-shadow: 0px -1px 10px 5px #7d7d7d;
+  border-radius: 20px;
+  padding: 2px; }
+
+.articuloTabla .articuloC2P3P {
+  text-align: center;
+  color: #fff;
+  background-color: blue;
+  box-shadow: 0px -1px 10px 5px #7d7d7d;
+  border-radius: 20px;
+  padding: 2px; }
+
+.articuloTabla .articuloC4P6P {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  box-shadow: 0px -1px 10px 5px #7d7d7d;
+  border-radius: 20px;
+  padding: 2px; }
+
+.articuloTabla .articuloC8P10P {
+  text-align: center;
+  color: #fff;
+  background-color: blue;
+  box-shadow: 0px -1px 10px 5px #7d7d7d;
+  border-radius: 20px;
+  padding: 2px; }
+
+.textoContacto p {
+  font-size: 1.2rem; }
+
+footer {
+  background-color: #000; }
+  footer .logoFace {
+    height: 5vh; }
+  footer .logoIG {
+    height: 5vh; }
+  footer .logoWts {
+    height: 5vh; }
+  footer .textoPie {
+    color: #fff; }

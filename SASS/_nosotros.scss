@@ -1,0 +1,28 @@
+.parrafoNosotros{
+    @extend %parrafos;
+    .primerParrafo{
+        margin: 10px;
+    }
+    .segundoParrafo{
+        margin: 10px;
+    }
+}
+
+.articuloFoto{
+    .fotoEdgar{
+    height: $fotoAltura;
+    box-shadow: 0px -1px 24px 0px map-get($coloresMaps, sombras );
+    }
+    .fotoBaso{
+    height: $fotoAltura;
+    box-shadow: 0px -1px 24px 0px map-get($coloresMaps, sombras );
+    }
+    .fotoJu{
+    height: $fotoAltura;
+    box-shadow: 0px -1px 24px 0px map-get($coloresMaps, sombras );
+    }
+    .fotoDeby{
+    height: $fotoAltura;
+    box-shadow: 0px -1px 24px 0px map-get($coloresMaps, sombras );
+    }
+}

@@ -1,0 +1,21 @@
+.articuloTabla{
+    .articuloC2P3C{
+        @include articulosTablas (#fff, red, #7d7d7d);
+    }
+    .articuloC4P6C{
+        @include articulosTablas (#fff, blue, #7d7d7d);
+    }
+    .articuloC8P10C{
+        @include articulosTablas (#fff, red, #7d7d7d);
+    }
+    .articuloC2P3P{
+        @include articulosTablas (#fff, blue, #7d7d7d);
+    }
+    .articuloC4P6P{
+        @include articulosTablas (#fff, red, #7d7d7d);
+    }
+    .articuloC8P10P{
+        @include articulosTablas (#fff, blue, #7d7d7d);
+    }
+
+}

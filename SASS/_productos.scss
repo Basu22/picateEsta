@@ -1,0 +1,26 @@
+/*PRODUCTOS*/
+
+.imgProductos{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.introProductos{
+    @extend %parrafos;
+    .textoProductos{
+        margin: 10px;
+    }
+}
+
+.listaProducto{
+    .itemProducto {
+        list-style: none;
+    }
+    li{
+        font-size: 1.2rem;
+    }
+} 
+
+
+
+
