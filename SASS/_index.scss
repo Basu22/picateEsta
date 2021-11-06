@@ -4,13 +4,37 @@
     margin: 0;
 }
 
+.tituloIndex{
+    margin: 10px 0;
+    text-align: center;
+}
+
 .carousel-inner{
-    max-height: 80vh;
+    margin: 10px 0;
+    max-height: 60vh;
     overflow: hidden;
     border-radius: $bordes-redondeados;
 }
 
+.filaClasica{
+    margin: 25px 0;
+    .picadaIndex{
+        height: 50vh;
+    }
+}
+
+.filaPremium{
+    margin: 25px 0;
+    .picadaIndex{
+        height: 50vh;
+    }
+}
+
+
 .contenedorArticulo {
+    
+    margin: 50px 0;
+    
     .iconoRepartidor{
         height: $iconos;
     }
@@ -21,5 +45,6 @@
         height: $iconos;
     }
 }
+
 
 

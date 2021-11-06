@@ -22,19 +22,34 @@
   padding: 0;
   margin: 0; }
 
+.tituloIndex {
+  margin: 10px 0;
+  text-align: center; }
+
 .carousel-inner {
-  max-height: 80vh;
+  margin: 10px 0;
+  max-height: 60vh;
   overflow: hidden;
   border-radius: 20px; }
 
-.contenedorArticulo .iconoRepartidor {
-  height: 15vh; }
+.filaClasica {
+  margin: 25px 0; }
+  .filaClasica .picadaIndex {
+    height: 50vh; }
 
-.contenedorArticulo .iconoCalendario {
-  height: 15vh; }
+.filaPremium {
+  margin: 25px 0; }
+  .filaPremium .picadaIndex {
+    height: 50vh; }
 
-.contenedorArticulo .iconoRegalo {
-  height: 15vh; }
+.contenedorArticulo {
+  margin: 50px 0; }
+  .contenedorArticulo .iconoRepartidor {
+    height: 15vh; }
+  .contenedorArticulo .iconoCalendario {
+    height: 15vh; }
+  .contenedorArticulo .iconoRegalo {
+    height: 15vh; }
 
 .parrafoNosotros .primerParrafo {
   margin: 10px; }
