@@ -13,5 +13,8 @@
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "sass-google-fonts": "^1.0.1"
   }
 }

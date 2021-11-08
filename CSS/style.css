@@ -1,3 +1,8 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+/* font-family: 'Dongle', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+/* font-family: 'Ubuntu', sans-serif; */
 .parrafoNosotros, .introProductos, .textoContacto {
   border: 1px solid #828282;
   border-radius: 15px;
@@ -6,25 +11,109 @@
   color: #fff;
   box-shadow: 0px -1px 10px 5px #7d7d7d; }
 
-.contenedorNav {
-  border-radius: 20px;
-  border-bottom: 5px solid #828282;
-  border-top: 5px solid #828282; }
-  .contenedorNav ul {
-    font-size: 2rem;
-    height: fit-content; }
-  .contenedorNav .logoCabecera {
-    height: 15vh;
-    z-index: 5;
+.contenedorCabecera {
+  margin-top: 20px;
+  border-bottom: 2px #000 solid;
+  border-radius: 70px; }
+  .contenedorCabecera .contenedorNav {
+    border-radius: 20px; }
+    .contenedorCabecera .contenedorNav ul {
+      font-size: 2rem;
+      height: auto;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-content: stretch; }
+    .contenedorCabecera .contenedorNav a {
+      text-decoration: none;
+      color: #000; }
+  .contenedorCabecera .logoCabecera {
+    border-radius: 50px;
+    height: 10vh;
     box-shadow: 0px -1px 10px 5px #7d7d7d; }
 
+/*  
+
+*{
+    font-family: Arial;
+  }
+  
+  ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  
+  input {
+    display: none;
+
+  
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  
+
+
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+/*   label:hover{
+    background: grey;
+  } */
+/* Estilo del boton cuando el menú está expandido*/
+/*   input:checked ~ label {
+    background: lightgrey; 
+  } */
+/*   
+  ul{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+  }
+  
+  
+  li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  } */
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+/*   li:hover {
+    filter: brightness(110%);
+  } */
+/* 
+  <nav>
+  <input type="checkbox" id="menu">
+  <label for="menu"> ☰ </label>
+  <ul>
+    <li>Link 1</li>
+    <li>Link 2</li>
+    <li>Link 3</li>
+    <li>Link 4</li>
+  </ul>
+</nav> 
+  }*/
 * {
   padding: 0;
   margin: 0; }
 
 .tituloIndex {
   margin: 10px 0;
-  text-align: center; }
+  text-align: center;
+  font-family: "Dongle", sans-serif; }
 
 .carousel-inner {
   margin: 10px 0;
@@ -148,3 +237,9 @@ footer {
     height: 5vh; }
   footer .textoPie {
     color: #fff; }
+
+p, h1, h2, h3, h4, h5 {
+  font-family: "Dongle", sans-serif; }
+
+nav {
+  font-family: "Dongle", sans-serif; }
