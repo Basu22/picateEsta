@@ -1,17 +1,15 @@
 @import "SASS/variables";
 
-@import "SASS/navegador";
 @import "SASS/index";
+@import "SASS/navegador";
 @import "SASS/nosotros";
 @import "SASS/productos";
 @import "SASS/tablas";
 @import "SASS/contactenos";
 @import "SASS/footer";
+@import "SASS/transform";
 
 p, h1, h2, h3, h4, h5{
     font-family: $fuentebody;
 }
 
-nav{
-    font-family: $fuentebody;
-}

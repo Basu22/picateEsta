@@ -1,21 +1,28 @@
+
+.imagenTablas{
+    @extend %imgResponsive;
+    border-radius: $bordes-redondeados;
+    align-self: center;
+}
+
 .articuloTabla{
     .articuloC2P3C{
-        @include articulosTablas (#000, white, #7d7d7d);
+        @include articulosTablas (#000, white);
     }
     .articuloC4P6C{
-        @include articulosTablas (#000, white, #7d7d7d);
+        @include articulosTablas (#000, white);
     }
     .articuloC8P10C{
-        @include articulosTablas (#000, white, #7d7d7d);
+        @include articulosTablas (#000, white);
     }
     .articuloC2P3P{
-        @include articulosTablas (#000, white, #7d7d7d);
+        @include articulosTablas (#000, white);
     }
     .articuloC4P6P{
-        @include articulosTablas (#000, white, #7d7d7d);
+        @include articulosTablas (#000, white);
     }
     .articuloC8P10P{
-        @include articulosTablas (#000, white, #7d7d7d);
+        @include articulosTablas (#000, white);
     }
 
 }

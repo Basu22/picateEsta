@@ -1,13 +1,17 @@
 
-*{
-    padding: 0;
-    margin: 0;
-}
 
-.tituloIndex{
+.primerTitulo{
     margin: 10px 0;
     text-align: center;
     font-family: $fuentebody;
+    font-size: map-get($tamañoTexto, tamañoH1);
+}
+
+.segundoTitulo{
+    margin: 10px 0;
+    text-align: center;
+    font-family: $fuentebody;
+    font-size: map-get($tamañoTexto, tamañoH2);
 }
 
 .carousel-inner{
@@ -15,6 +19,7 @@
     max-height: 60vh;
     overflow: hidden;
     border-radius: $bordes-redondeados;
+
 }
 
 .filaClasica{
@@ -31,21 +36,26 @@
     }
 }
 
-
-.contenedorArticulo {
-    
-    margin: 50px 0;
-    
-    .iconoRepartidor{
-        height: $iconos;
-    }
-    .iconoCalendario{
-        height: $iconos;
-    }
-    .iconoRegalo{
-        height: $iconos;
+.contenedorIconos{
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    background-color: darkgray;
+    margin: 5% 0;;
+    padding: 0 10%;
+    .contenedorArticulo {
+        margin: 50px 0;
+        .iconoRepartidor{
+            height: $iconos;
+        }
+        .iconoCalendario{
+            height: $iconos;
+        }
+        .iconoRegalo{
+            height: $iconos;
+        }
     }
 }
+
 
 
 
