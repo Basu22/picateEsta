@@ -12,6 +12,7 @@ footer{
     }
     .textoPie{
         color: #fff;
+        font-size: map-get($tamañoTexto, tamañoP);
     }
 }
 
