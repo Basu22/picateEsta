@@ -1,12 +1,24 @@
-.parrafoNosotros{
-    @extend %parrafos;
-    .primerParrafo{
-        margin: 10px;
-    }
-    .segundoParrafo{
-        margin: 10px;
-    }
+.contenedorParrafo{
+    @include flexbox (space-evenly)
 }
+    .parrafoNosotros{
+        margin: 3% 0;
+        padding: 2% 0;
+        @extend %parrafos;
+        
+        .primerParrafo{
+            margin: 10px;
+            font-size: map-get($tamañoTexto, tamañoP);
+
+        }
+        .segundoParrafo{
+            margin: 10px;
+            font-size: map-get($tamañoTexto, tamañoP);
+            
+        }
+    }
+
+
 
 .articuloFoto{
     .fotoEdgar{

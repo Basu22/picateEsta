@@ -9,6 +9,7 @@
     @extend %parrafos;
     .textoProductos{
         margin: 10px;
+        font-size: map-get($tamañoTexto, tamañoP );
     }
 }
 

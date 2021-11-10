@@ -16,9 +16,9 @@ $iconos-redes: 5vh;
 
 
 $tamañoTexto:(
-    tamañoH1: 5rem,
-    tamañoH2: 3rem,
-    tamañoP:  2rem,
+    tamañoH1: 4.5rem,
+    tamañoH2: 2.5rem,
+    tamañoP:  1.5rem,
 );
 
 
@@ -33,9 +33,7 @@ $coloresMaps:(
     border: 1px solid map-get($coloresMaps,borde-parrafo);
     border-radius: 15px;
     text-align: center;
-    background-color: map-get($coloresMaps,fondo-parrafos);
-    color: #fff;
-    box-shadow: 0px -1px 10px 5px map-get($coloresMaps,sombras);
+    color: #000;
 }
 
 @mixin articulosTablas ($color, $background){
@@ -45,6 +43,11 @@ $coloresMaps:(
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+}
+
+@mixin flexbox ($justify) {
+    display: flex;
+    justify-content: $justify;
 }
 
 %imgResponsive {

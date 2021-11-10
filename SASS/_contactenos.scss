@@ -1,6 +1,8 @@
 .textoContacto{
     @extend %parrafos;
-    p{
-        font-size: 1.2rem;
+    .parrafoContacto{
+        margin: 1% 0;
+        padding: 1% 0;
+        font-size: map-get($tamañoTexto, tamañoP);
     }
 }

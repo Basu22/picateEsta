@@ -8,9 +8,7 @@
   border: 1px solid #828282;
   border-radius: 15px;
   text-align: center;
-  background-color: #828282;
-  color: #fff;
-  box-shadow: 0px -1px 10px 5px #7d7d7d; }
+  color: #000; }
 
 .imagenTablas {
   max-width: 100%;
@@ -25,13 +23,13 @@
   margin: 10px 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 5rem; }
+  font-size: 4.5rem; }
 
 .segundoTitulo {
   margin: 10px 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 3rem; }
+  font-size: 2.5rem; }
 
 .carousel-inner {
   margin: 10px 0;
@@ -82,11 +80,19 @@
     border-radius: 50px;
     height: 10vh; }
 
-.parrafoNosotros .primerParrafo {
-  margin: 10px; }
+.contenedorParrafo {
+  display: flex;
+  justify-content: space-evenly; }
 
-.parrafoNosotros .segundoParrafo {
-  margin: 10px; }
+.parrafoNosotros {
+  margin: 3% 0;
+  padding: 2% 0; }
+  .parrafoNosotros .primerParrafo {
+    margin: 10px;
+    font-size: 1.5rem; }
+  .parrafoNosotros .segundoParrafo {
+    margin: 10px;
+    font-size: 1.5rem; }
 
 .articuloFoto .fotoEdgar {
   height: 20vh;
@@ -110,7 +116,8 @@
   border-radius: 20px; }
 
 .introProductos .textoProductos {
-  margin: 10px; }
+  margin: 10px;
+  font-size: 1.5rem; }
 
 .listaProducto .itemProducto {
   list-style: none; }
@@ -170,8 +177,10 @@
   border-radius: 20px;
   padding: 2px; }
 
-.textoContacto p {
-  font-size: 1.2rem; }
+.textoContacto .parrafoContacto {
+  margin: 1% 0;
+  padding: 1% 0;
+  font-size: 1.5rem; }
 
 footer {
   background-color: #000; }
