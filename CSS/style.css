@@ -23,13 +23,13 @@
   margin: 10px 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 4.5rem; }
+  font-size: 4rem; }
 
 .segundoTitulo {
   margin: 10px 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .carousel-inner {
   margin: 10px 0;
@@ -89,10 +89,10 @@
   padding: 2% 0; }
   .parrafoNosotros .primerParrafo {
     margin: 10px;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
   .parrafoNosotros .segundoParrafo {
     margin: 10px;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
 
 .articuloFoto .fotoEdgar {
   height: 20vh;
@@ -117,7 +117,7 @@
 
 .introProductos .textoProductos {
   margin: 10px;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .listaProducto .itemProducto {
   list-style: none; }
@@ -180,7 +180,7 @@
 .textoContacto .parrafoContacto {
   margin: 1% 0;
   padding: 1% 0;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 footer {
   background-color: #000; }
@@ -192,7 +192,7 @@ footer {
     height: 5vh; }
   footer .textoPie {
     color: #fff;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
 
 .contenedorNav ul li:hover {
   border-bottom: 1px #000 solid; }
