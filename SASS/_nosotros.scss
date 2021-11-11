@@ -38,3 +38,15 @@
     box-shadow: 0px -1px 24px 0px map-get($coloresMaps, sombras );
     }
 }
+
+.fondoNosotrosuno{
+    img{
+        filter:$sautarcion;
+    }
+}
+
+.fondoNosotrosdos{
+    img{
+        filter:$sautarcion;
+    }
+}

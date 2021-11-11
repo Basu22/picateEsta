@@ -19,6 +19,9 @@
     max-height: 60vh;
     overflow: hidden;
     border-radius: $bordes-redondeados;
+    img{
+        filter:$sautarcion;
+    }
 
 }
 
@@ -26,6 +29,7 @@
     margin: 25px 0;
     .picadaIndex{
         height: 50vh;
+        filter:$sautarcion;
     }
 }
 
@@ -33,6 +37,7 @@
     margin: 25px 0;
     .picadaIndex{
         height: 50vh;
+        filter:$sautarcion;
     }
 }
 

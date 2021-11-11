@@ -23,7 +23,7 @@
   margin: 10px 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 .segundoTitulo {
   margin: 10px 0;
@@ -36,16 +36,20 @@
   max-height: 60vh;
   overflow: hidden;
   border-radius: 20px; }
+  .carousel-inner img {
+    filter: saturate(1.8); }
 
 .filaClasica {
   margin: 25px 0; }
   .filaClasica .picadaIndex {
-    height: 50vh; }
+    height: 50vh;
+    filter: saturate(1.8); }
 
 .filaPremium {
   margin: 25px 0; }
   .filaPremium .picadaIndex {
-    height: 50vh; }
+    height: 50vh;
+    filter: saturate(1.8); }
 
 .contenedorIconos {
   border-top: 1px #000 solid;
@@ -67,7 +71,7 @@
   .contenedorCabecera .contenedorNav {
     border-radius: 20px; }
     .contenedorCabecera .contenedorNav ul {
-      font-size: 2rem;
+      font-size: 1.5rem;
       height: auto;
       list-style: none;
       display: flex;
@@ -89,10 +93,10 @@
   padding: 2% 0; }
   .parrafoNosotros .primerParrafo {
     margin: 10px;
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   .parrafoNosotros .segundoParrafo {
     margin: 10px;
-    font-size: 1.2rem; }
+    font-size: 1rem; }
 
 .articuloFoto .fotoEdgar {
   height: 20vh;
@@ -110,14 +114,21 @@
   height: 20vh;
   box-shadow: 0px -1px 24px 0px #7d7d7d; }
 
+.fondoNosotrosuno img {
+  filter: saturate(1.8); }
+
+.fondoNosotrosdos img {
+  filter: saturate(1.8); }
+
 /*PRODUCTOS*/
 .imgProductos {
   overflow: hidden;
-  border-radius: 20px; }
+  border-radius: 20px;
+  filter: saturate(1.8); }
 
 .introProductos .textoProductos {
   margin: 10px;
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
 .listaProducto .itemProducto {
   list-style: none; }
@@ -127,7 +138,8 @@
 
 .imagenTablas {
   border-radius: 20px;
-  align-self: center; }
+  align-self: center;
+  filter: saturate(1.8); }
 
 .articuloTabla .articuloC2P3C {
   text-align: center;
@@ -135,7 +147,26 @@
   background-color: white;
   border: 1px #000 solid;
   border-radius: 20px;
-  padding: 2px; }
+  padding: 2px;
+  filter: saturate(1.8);
+  position: relative; }
+
+.articuloTabla .contenidoC2P3C {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  transition: 1s ease; }
+  .articuloTabla .contenidoC2P3C ul {
+    list-style: none;
+    padding: 5px 0 0 15px;
+    color: #ffff;
+    text-align: start;
+    font-size: 1rem; }
 
 .articuloTabla .articuloC4P6C {
   text-align: center;
@@ -143,7 +174,26 @@
   background-color: white;
   border: 1px #000 solid;
   border-radius: 20px;
-  padding: 2px; }
+  padding: 2px;
+  filter: saturate(1.8);
+  position: relative; }
+
+.articuloTabla .contenidoC4P6C {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  transition: 1s ease; }
+  .articuloTabla .contenidoC4P6C ul {
+    list-style: none;
+    padding: 5px 0 0 15px;
+    color: #ffff;
+    text-align: start;
+    font-size: 1rem; }
 
 .articuloTabla .articuloC8P10C {
   text-align: center;
@@ -151,7 +201,26 @@
   background-color: white;
   border: 1px #000 solid;
   border-radius: 20px;
-  padding: 2px; }
+  padding: 2px;
+  filter: saturate(1.8);
+  position: relative; }
+
+.articuloTabla .contenidoC8P10C {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  transition: 1s ease; }
+  .articuloTabla .contenidoC8P10C ul {
+    list-style: none;
+    padding: 5px 0 0 15px;
+    color: #ffff;
+    text-align: start;
+    font-size: 1rem; }
 
 .articuloTabla .articuloC2P3P {
   text-align: center;
@@ -159,7 +228,26 @@
   background-color: white;
   border: 1px #000 solid;
   border-radius: 20px;
-  padding: 2px; }
+  padding: 2px;
+  filter: saturate(1.8);
+  position: relative; }
+
+.articuloTabla .contenidoC2P3P {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  transition: 1s ease; }
+  .articuloTabla .contenidoC2P3P ul {
+    list-style: none;
+    padding: 5px 0 0 15px;
+    color: #ffff;
+    text-align: start;
+    font-size: 1rem; }
 
 .articuloTabla .articuloC4P6P {
   text-align: center;
@@ -167,7 +255,26 @@
   background-color: white;
   border: 1px #000 solid;
   border-radius: 20px;
-  padding: 2px; }
+  padding: 2px;
+  filter: saturate(1.8);
+  position: relative; }
+
+.articuloTabla .contenidoC4P6P {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  transition: 1s ease; }
+  .articuloTabla .contenidoC4P6P ul {
+    list-style: none;
+    padding: 5px 0 0 15px;
+    color: #ffff;
+    text-align: start;
+    font-size: 1rem; }
 
 .articuloTabla .articuloC8P10P {
   text-align: center;
@@ -175,12 +282,31 @@
   background-color: white;
   border: 1px #000 solid;
   border-radius: 20px;
-  padding: 2px; }
+  padding: 2px;
+  filter: saturate(1.8);
+  position: relative; }
+
+.articuloTabla .contenidoC8P10P {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  transition: 1s ease; }
+  .articuloTabla .contenidoC8P10P ul {
+    list-style: none;
+    padding: 5px 0 0 15px;
+    color: #ffff;
+    text-align: start;
+    font-size: 1rem; }
 
 .textoContacto .parrafoContacto {
   margin: 1% 0;
   padding: 1% 0;
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
 footer {
   background-color: #000; }
@@ -192,7 +318,7 @@ footer {
     height: 5vh; }
   footer .textoPie {
     color: #fff;
-    font-size: 1.2rem; }
+    font-size: 1rem; }
 
 .contenedorNav ul li:hover {
   border-bottom: 1px #000 solid; }
@@ -200,6 +326,24 @@ footer {
 .articuloTabla:hover {
   box-shadow: 0px -1px 10px 5px #7d7d7d;
   border-radius: 20px; }
+
+.articuloC2P3C:hover .contenidoC2P3C {
+  height: 100%; }
+
+.articuloC4P6C:hover .contenidoC4P6C {
+  height: 100%; }
+
+.articuloC8P10C:hover .contenidoC8P10C {
+  height: 100%; }
+
+.articuloC2P3P:hover .contenidoC2P3P {
+  height: 100%; }
+
+.articuloC4P6P:hover .contenidoC4P6P {
+  height: 100%; }
+
+.articuloC8P10P:hover .contenidoC8P10P {
+  height: 100%; }
 
 p, h1, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif; }

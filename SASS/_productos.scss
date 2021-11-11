@@ -3,13 +3,14 @@
 .imgProductos{
     overflow: hidden;
     border-radius: 20px;
+    filter:$sautarcion;
 }
 
 .introProductos{
     @extend %parrafos;
     .textoProductos{
         margin: 10px;
-        font-size: map-get($tamañoTexto, tamañoP );
+        font-size: map-get($tamañoTexto, tamañoP);
     }
 }
 

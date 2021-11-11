@@ -3,14 +3,12 @@
     margin: 20px 0 50px 0;
 
     .contenedorNav{
-
         border-radius: $bordes-redondeados;
     
         ul{
-            font-size: 2rem;
+            font-size: map-get($tamañoTexto, tamañoNav);
             height: auto;
             list-style: none;
-    
             display: flex;
             justify-content:space-between;
             align-content: stretch;
