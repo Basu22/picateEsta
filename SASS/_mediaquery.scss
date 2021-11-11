@@ -1,0 +1,232 @@
+@media only screen and (max-width:2561px){
+    ul{
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width:1441px){
+    ul{
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width:1025px){
+    ul{
+        font-size: 1.2rem;
+    }
+    .parrafo{
+        font-size: 0.7rem;
+    }
+    .logoFace, .logoIG, .logoWts {
+        height: 7vh;
+    }
+}
+
+@media only screen and (max-width:769px){
+    .contenedorCabecera{
+        .row{
+            flex-direction: row-reverse;
+        }
+        .contenedorNav{
+            display: none;
+        }
+    }
+    
+    .textoPie{
+        text-align: center;
+    }
+    .logoFace, .logoIG, .logoWts {
+        height: 10vh;
+    }
+
+    .picadaIndex{
+        padding-bottom: 20px;
+    }
+
+    .navegadorHamburguesa{
+        display: block;
+        .listadoHamburguesa{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 70%;
+            height: min-content;
+            list-style: none;
+            font-size: map-get($tamañoTexto, tamañoNav);
+            z-index: 5;
+            li {
+                padding-top: 15px;            
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .checkHamburguesa{
+            display:none;
+            &:checked  ~ .listadoHamburguesa{
+                display:block;
+                position: absolute;
+            }
+        }
+        .imgHamburguesa{
+            height: 10vh;
+        }
+    }
+}
+
+
+@media all and (max-width:426px){
+
+    .contenedorCabecera{
+        .row{
+            flex-direction: row-reverse;
+        }
+        .contenedorNav{
+            display: none;
+        }
+    }
+    
+    .textoPie{
+        text-align: center;
+    }
+    .logoFace, .logoIG, .logoWts {
+        height: 10vh;
+    }
+
+    .picadaIndex{
+        padding-bottom: 20px;
+    }
+
+    .navegadorHamburguesa{
+        display: block;
+        .listadoHamburguesa{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 70%;
+            height: min-content;
+            list-style: none;
+            font-size: map-get($tamañoTexto, tamañoNav);
+            li {
+                padding-top: 15px;            
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .checkHamburguesa{
+            display:none;
+            &:checked  ~ .listadoHamburguesa{
+                display:block;
+                position: absolute;
+            }
+        }
+        .imgHamburguesa{
+            height: 10vh;
+        }
+    }
+}
+
+@media all and (max-width:376px){
+
+    .textoPie{
+        text-align: center;
+    }
+    .logoFace, .logoIG, .logoWts {
+        height: 10vh;
+    }
+
+    .navegadorHamburguesa{
+        display: block;
+        .listadoHamburguesa{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 70%;
+            height: min-content;
+            list-style: none;
+            font-size: map-get($tamañoTexto, tamañoNav);
+            li {
+                padding-top: 15px;            
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .checkHamburguesa{
+            display:none;
+            &:checked  ~ .listadoHamburguesa{
+                display:block;
+                position: absolute;
+            }
+        }
+        .imgHamburguesa{
+            height: 10vh;
+        }
+    }
+}
+
+
+
+
+@media all and (max-width:321px){ 
+    /* NAVEGADOR */
+    .contenedorCabecera{
+        .row{
+            flex-direction: row-reverse;
+        }
+        .contenedorNav{
+            display: none;
+        }
+    }
+    .navegadorHamburguesa{
+        display: block;
+        .listadoHamburguesa{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 70%;
+            height: min-content;
+            list-style: none;
+            font-size: map-get($tamañoTexto, tamañoNav);
+            li {
+                padding-top: 15px;            
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .checkHamburguesa{
+            display:none;
+            &:checked  ~ .listadoHamburguesa{
+                display:block;
+                position: absolute;
+            }
+        }
+        .imgHamburguesa{
+            height: 10vh;
+        }
+    }
+    /* FIN NAVEGADOR */
+    
+    /* INDEX */
+    .picadaIndex{
+        padding-bottom: 20px;
+    }
+    
+
+    /* FIN INDEX */
+    /* FOOTER */
+    .textoPie{
+        text-align: center;
+    }
+    .logoFace, .logoIG, .logoWts {
+        height: 10vh;
+    }
+    /* FIN FOOTER */
+
+    
+
+}
