@@ -173,6 +173,7 @@
 
 @media all and (max-width:321px){ 
     /* NAVEGADOR */
+    
     .contenedorCabecera{
         .row{
             flex-direction: row-reverse;
@@ -209,22 +210,24 @@
             height: 10vh;
         }
     }
-    /* FIN NAVEGADOR */
     
+    /* FIN NAVEGADOR */
     /* INDEX */
+    
     .picadaIndex{
         padding-bottom: 20px;
     }
     
-
     /* FIN INDEX */
     /* FOOTER */
+    
     .textoPie{
         text-align: center;
     }
     .logoFace, .logoIG, .logoWts {
         height: 10vh;
     }
+    
     /* FIN FOOTER */
 
     
