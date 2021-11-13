@@ -107,7 +107,7 @@
                 padding:5px 0 0 15px;
                 color: #ffff;
                 text-align: start;
-                font-size: map-get($tamañoTexto, tamañoP);
+                font-size: map-get($tamañoTexto, tamañoLItablas);
             }
         }
     }
@@ -134,7 +134,7 @@
                 padding:5px 0 0 15px;
                 color: #ffff;
                 text-align: start;
-                font-size: map-get($tamañoTexto, tamañoP);
+                font-size: map-get($tamañoTexto, tamañoLItablas);
             };
         }
     }
@@ -162,7 +162,7 @@
                 padding:5px 0 0 15px;
                 color: #ffff;
                 text-align: start;
-                font-size: map-get($tamañoTexto, tamañoP);
+                font-size: map-get($tamañoTexto, tamañoLItablas);
             }
         }
     }
