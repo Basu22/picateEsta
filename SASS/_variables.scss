@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 /* font-family: 'Raleway', sans-serif; */
 
-
+/* VARIABLES */
 $fuentebody: 'Raleway', sans-serif;
 $fotoAltura: 20vh;
 $iconos: 15vh;
@@ -15,12 +15,13 @@ $bordes-redondeados: 20px;
 $iconos-redes: 5vh;
 $sautarcion:saturate(1.8) ;
 
-
+/* MAPAS */
 $tamañoTexto:(
     tamañoH1: 3rem,
     tamañoH2: 2rem,
     tamañoP:  1rem,
-    tamañoNav:1.5rem,
+    tamañoNav: 1.5rem,
+    tamañoLItablas: 0.75rem,
 );
 
 
@@ -31,13 +32,8 @@ $coloresMaps:(
     sombras: #7d7d7d,
 );
 
-%parrafos{
-    border: 1px solid map-get($coloresMaps,borde-parrafo);
-    border-radius: 15px;
-    text-align: center;
-    color: #000;
-}
 
+/* MIXINS */
 @mixin articulosTablas ($color, $background){
     text-align: center;
     color: $color;
@@ -47,15 +43,53 @@ $coloresMaps:(
     padding: 2px;
 }
 
-@mixin flexbox ($justify) {
+@mixin flexbox_justify ($justify, $wrap, $direction) {
     display: flex;
     justify-content: $justify;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
 }
+
+@mixin flexbox_align ($align, $wrap, $direction) {
+    display: flex;
+    align-content: $align;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
+
+
+
+/*  */
 
 %imgResponsive {
     max-width: 100%;
     height: auto;
 }
+
+%parrafos{
+    border: 1px solid map-get($coloresMaps,borde-parrafo);
+    border-radius: 15px;
+    text-align: center;
+    color: #000;
+}
+
+%animacionNosotros{
+    @include flexbox_justify(center,wrap,row);
+    align-content:center;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:10%;
+    width:80%;
+    height:0%;
+    overflow: hidden;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: $bordes-redondeados; 
+    transition: 1s ease;
+}
+
+
 
 *{
     padding: 0px;

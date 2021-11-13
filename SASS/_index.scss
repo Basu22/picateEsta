@@ -26,6 +26,7 @@
 }
 
 .filaClasica{
+    @include flexbox_justify (space-evenly,wrap,row);
     margin: 25px 0;
     .picadaIndex{
         height: 50vh;
@@ -35,6 +36,7 @@
 
 .filaPremium{
     margin: 25px 0;
+    @include flexbox_justify (space-evenly,wrap,row);
     .picadaIndex{
         height: 50vh;
         filter:$sautarcion;
@@ -49,6 +51,9 @@
     padding: 0 10%;
     .contenedorArticulo {
         margin: 50px 0;
+        .contenedorIconoTexto{
+            @include flexbox_align (center,wrap,row)
+        }
         .iconoRepartidor{
             height: $iconos;
         }
