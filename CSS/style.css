@@ -26,11 +26,14 @@
   align-content: center;
   position: absolute;
   text-align: center;
-  top: 50%;
+  padding: 0 1%;
+  top: 0%;
   left: 10%;
   width: 80%;
-  height: 0%;
+  height: 100%;
+  transform: scale(0);
   overflow: hidden;
+  border: #fff 1px Solid;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -120,7 +123,7 @@
       color: #000; }
   .contenedorCabecera .logoCabecera {
     border-radius: 50px;
-    height: 10vh; }
+    height: 20vh; }
 
 .contenedorParrafo {
   display: flex;
@@ -394,16 +397,16 @@ footer {
 
 /* NOSOTROS */
 .fondoNosotrosuno:hover .contenedorTexto {
-  height: 50%; }
+  transform: scaley(0.9); }
 
 .fondoNosotrosdos:hover .contenedorTexto {
-  height: 50%; }
+  transform: scaley(0.9); }
 
 .fondoNosotrostres:hover .contenedorTexto {
-  height: 50%; }
+  transform: scaley(0.9); }
 
 .fondoNosotroscuatro:hover .contenedorTexto {
-  height: 50%; }
+  transform: scaley(0.9); }
 
 /* TABLAS */
 .articuloTabla:hover {
@@ -551,7 +554,8 @@ footer {
       width: 70%;
       height: min-content;
       list-style: none;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      transition: all 5s; }
       .navegadorHamburguesa .listadoHamburguesa li {
         padding-top: 15px; }
         .navegadorHamburguesa .listadoHamburguesa li a {
@@ -563,7 +567,7 @@ footer {
         display: block;
         position: absolute; }
     .navegadorHamburguesa .imgHamburguesa {
-      height: 10vh; }
+      height: 5vh; }
   /* NOSOTROS */
   .fondoNosotrosuno {
     margin-bottom: 10px; }
@@ -597,7 +601,8 @@ footer {
       width: 70%;
       height: min-content;
       list-style: none;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      transition: height 2s ease; }
       .navegadorHamburguesa .listadoHamburguesa li {
         padding-top: 15px; }
         .navegadorHamburguesa .listadoHamburguesa li a {
@@ -609,7 +614,7 @@ footer {
         display: block;
         position: absolute; }
     .navegadorHamburguesa .imgHamburguesa {
-      height: 10vh; }
+      height: 5vh; }
   /* FIN NAVEGADOR */
   /* INDEX */
   .picadaIndex {

@@ -9,7 +9,7 @@
 
 /* VARIABLES */
 $fuentebody: 'Raleway', sans-serif;
-$fotoAltura: 20vh;
+$fotoAltura: 200%;
 $iconos: 15vh;
 $bordes-redondeados: 20px;
 $iconos-redes: 5vh;
@@ -78,11 +78,14 @@ $coloresMaps:(
     align-content:center;
     position: absolute;
     text-align: center;
-    top:50%;
+    padding: 0 1%;
+    top:0%;
     left:10%;
     width:80%;
-    height:0%;
+    height: 100%;
+    transform: scale(0) ;
     overflow: hidden;
+    border: #fff 1px Solid;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: $bordes-redondeados; 

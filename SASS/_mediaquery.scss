@@ -184,6 +184,7 @@
             height: min-content;
             list-style: none;
             font-size: map-get($tamañoTexto, tamañoNav);
+            transition: all 5s;
             li {
                 padding-top: 15px;            
                 a{
@@ -200,7 +201,7 @@
             }
         }
         .imgHamburguesa{
-            height: 10vh;
+            height: 5vh;
         }
     }
 
@@ -250,6 +251,7 @@
             height: min-content;
             list-style: none;
             font-size: map-get($tamañoTexto, tamañoNav);
+            transition: height 2s ease ;
             li {
                 padding-top: 15px;            
                 a{
@@ -266,7 +268,7 @@
             }
         }
         .imgHamburguesa{
-            height: 10vh;
+            height: 5vh;
         }
     }
     
