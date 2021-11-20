@@ -2,33 +2,38 @@
     border-bottom: 1px #000 solid;
 } 
 
-
 /* NOSOTROS */
 
 .fondoNosotrosuno{
     &:hover .contenedorTexto{
         transform: scaley(0.9);
+        transition: 1s ease;
     }
 }
 
 .fondoNosotrosdos{
     &:hover .contenedorTexto{
         transform: scaley(0.9);
+        transition: 1s ease;
     }
 }
 
 .fondoNosotrostres{
     &:hover .contenedorTexto{
         transform: scaley(0.9);
+        transition: 1s ease;
     }
 }
 
 .fondoNosotroscuatro{
     &:hover .contenedorTexto{
         transform: scaley(0.9);
+        transition: 1s ease;
     }
 }
 /* TABLAS */
+
+
 .articuloTabla:hover{
     box-shadow: 0px -1px 10px 5px #7d7d7d;
     border-radius: $bordes-redondeados;
@@ -56,4 +61,23 @@
 
 .articuloC8P10P:hover .contenidoC8P10P {
     height: 100%;
+}
+
+#modalC2P3C:target{
+    @extend %animacionModal;
+}
+#modalC4P6C:target{
+    @extend %animacionModal;
+}
+#modalC8P10C:target{
+    @extend %animacionModal;
+}
+#modalC2P3P:target{
+    @extend %animacionModal;
+}
+#modalC4P6P:target{
+    @extend %animacionModal;
+}
+#modalC8P10P:target{
+    @extend %animacionModal;
 }

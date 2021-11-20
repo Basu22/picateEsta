@@ -1,3 +1,6 @@
+.verContenido{
+    display: none;
+}
 
 .contenedorImgTablas{
     @include flexbox_justify (center,wrap,column);
@@ -8,57 +11,71 @@
     }
 }
 
+.modalC2P3C{
+    @extend %modalTablas;
+    .modalContenidoC2P3C{
+        @extend %modalContenido;
+    }
+}
+
+.modalC4P6C{
+    @extend %modalTablas;
+    .modalContenidoC4P6C{
+        @extend %modalContenido;
+    }
+}
+
+.modalC8P10C{
+    @extend %modalTablas;
+    .modalContenidoC8P10C{
+        @extend %modalContenido;
+    }
+}
+
+.modalC2P3P{
+    @extend %modalTablas;
+    .modalContenidoC2P3P{
+        @extend %modalContenido;
+    }
+}
+
+.modalC4P6P{
+    @extend %modalTablas;
+    .modalContenidoC4P6P{
+        @extend %modalContenido;
+    }
+}
+
+.modalC8P10P{
+    @extend %modalTablas;
+    .modalContenidoC8P10P{
+        @extend %modalContenido;
+    }
+}
+
 .articuloTabla2C{
     position: relative;
     .articuloC2P3C{
         @include articulosTablas (#000, white);
         filter:$sautarcion;
         .contenidoC2P3C{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            border-radius: $bordes-redondeados;
-            transition: 1s ease;
-            ul{
-                list-style: none;
-                padding:5px 0 0 15px;
-                color: #ffff;
-                text-align: start;
-                font-size: map-get($tamañoTexto, tamañoLItablas);
-            };
+            @include flexbox_align (center,wrap,row);
+            @extend %animacionCoverTablas;
         }
     }
 }
+
 .articuloTabla4C{
     position: relative;
     .articuloC4P6C{
         @include articulosTablas (#000, white);
         filter:$sautarcion;
         .contenidoC4P6C{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            border-radius: $bordes-redondeados;
-            transition: 1s ease;
-            ul{
-                list-style: none;
-                padding:5px 0 0 15px;
-                color: #ffff;
-                text-align: start;
-                font-size: map-get($tamañoTexto, tamañoLItablas);
-            };
+            @include flexbox_align (center,wrap,row);
+            @extend %animacionCoverTablas;
         }
     }
 }
-
 
 .articuloTabla8C{
     position: relative;
@@ -66,26 +83,11 @@
         @include articulosTablas (#000, white);
         filter:$sautarcion;
         .contenidoC8P10C{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            border-radius: $bordes-redondeados;
-            transition: 1s ease;
-            ul{
-                list-style: none;
-                padding:5px 0 0 15px;
-                color: #ffff;
-                text-align: start;
-                font-size: map-get($tamañoTexto, tamañoLItablas);
-            };
+            @include flexbox_align (center,wrap,row);
+            @extend %animacionCoverTablas;
         }
     }
 }
-
 
 .articuloTabla2P{
     position: relative;
@@ -93,22 +95,8 @@
         @include articulosTablas (#000, white);
         filter:$sautarcion;
         .contenidoC2P3P{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            border-radius: $bordes-redondeados;
-            transition: 1s ease;
-            ul{
-                list-style: none;
-                padding:5px 0 0 15px;
-                color: #ffff;
-                text-align: start;
-                font-size: map-get($tamañoTexto, tamañoLItablas);
-            }
+            @include flexbox_align (center,wrap,row);
+            @extend %animacionCoverTablas;
         }
     }
 }
@@ -120,27 +108,11 @@
         @include articulosTablas (#000, white);
         filter:$sautarcion;
         .contenidoC4P6P{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            border-radius: $bordes-redondeados;
-            transition: 1s ease;
-            ul{
-                list-style: none;
-                padding:5px 0 0 15px;
-                color: #ffff;
-                text-align: start;
-                font-size: map-get($tamañoTexto, tamañoLItablas);
-            };
+            @include flexbox_align (center,wrap,row);
+            @extend %animacionCoverTablas;
         }
     }
 }
-
-
 
 .articuloTabla8P{
     position: relative;
@@ -148,23 +120,16 @@
         @include articulosTablas (#000, white);
         filter:$sautarcion;
         .contenidoC8P10P{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            border-radius: $bordes-redondeados;
-            transition: 1s ease;
-            ul{
-                list-style: none;
-                padding:5px 0 0 15px;
-                color: #ffff;
-                text-align: start;
-                font-size: map-get($tamañoTexto, tamañoLItablas);
-            }
+            @include flexbox_align (center,wrap,row);
+            @extend %animacionCoverTablas;
         }
     }
 }
 
+.listaQuesos{
+    margin-top: 10px;
+}
+.tituloLista{
+    @extend %tituloTablas;
+    font-size:map-get($tamañoTexto, tamañoLItablas);
+}

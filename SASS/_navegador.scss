@@ -4,15 +4,14 @@
 }
 
 .contenedorCabecera{
-    margin: 20px 0 50px 0;
+    margin-top: 20px;
     .contenedorNav{
         border-radius: $bordes-redondeados;
         ul{
             font-size: map-get($tamañoTexto, tamañoNav);
+            @include flexbox_justify(space-between,wrap,row);
             height: auto;
             list-style: none;
-            display: flex;
-            justify-content:space-between;
             align-content: stretch;
         }
         a{
