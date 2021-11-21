@@ -1,6 +1,13 @@
 .verContenido{
     display: none;
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, 0.57);
+    color: #fff;
+    width: 50%;
+    border-radius: $bordes-redondeados;
 }
+
+
 
 .contenedorImgTablas{
     @include flexbox_justify (center,wrap,column);
@@ -81,6 +88,7 @@
     position: relative;
     .articuloC2P3C{
         @include articulosTablas (#000, white);
+        @include flexbox_justify (center,wrap,row);
         filter:$sautarcion;
         .contenidoC2P3C{
             @include flexbox_align (center,wrap,row);
@@ -93,6 +101,7 @@
     position: relative;
     .articuloC4P6C{
         @include articulosTablas (#000, white);
+        @include flexbox_justify (center,wrap,row);
         filter:$sautarcion;
         .contenidoC4P6C{
             @include flexbox_align (center,wrap,row);
@@ -105,6 +114,7 @@
     position: relative;
     .articuloC8P10C{
         @include articulosTablas (#000, white);
+        @include flexbox_justify (center,wrap,row);
         filter:$sautarcion;
         .contenidoC8P10C{
             @include flexbox_align (center,wrap,row);
@@ -117,6 +127,7 @@
     position: relative;
     .articuloC2P3P{
         @include articulosTablas (#000, white);
+        @include flexbox_justify (center,wrap,row);
         filter:$sautarcion;
         .contenidoC2P3P{
             @include flexbox_align (center,wrap,row);
@@ -130,6 +141,7 @@
     position: relative;
     .articuloC4P6P{
         @include articulosTablas (#000, white);
+        @include flexbox_justify (center,wrap,row);
         filter:$sautarcion;
         .contenidoC4P6P{
             @include flexbox_align (center,wrap,row);
@@ -142,6 +154,7 @@
     position: relative;
     .articuloC8P10P{
         @include articulosTablas (#000, white);
+        @include flexbox_justify (center,wrap,row);
         filter:$sautarcion;
         .contenidoC8P10P{
             @include flexbox_align (center,wrap,row);

@@ -285,7 +285,12 @@
   font-size: 1.2rem; }
 
 .verContenido {
-  display: none; }
+  display: none;
+  text-decoration: none;
+  background-color: rgba(255, 0, 0, 0.57);
+  color: #fff;
+  width: 50%;
+  border-radius: 20px; }
 
 .contenedorImgTablas {
   display: flex;
@@ -329,6 +334,10 @@
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     filter: saturate(1.8); }
     .articuloTabla2C .articuloC2P3C .contenidoC2P3C {
       display: flex;
@@ -345,6 +354,10 @@
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     filter: saturate(1.8); }
     .articuloTabla4C .articuloC4P6C .contenidoC4P6C {
       display: flex;
@@ -361,6 +374,10 @@
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     filter: saturate(1.8); }
     .articuloTabla8C .articuloC8P10C .contenidoC8P10C {
       display: flex;
@@ -377,6 +394,10 @@
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     filter: saturate(1.8); }
     .articuloTabla2P .articuloC2P3P .contenidoC2P3P {
       display: flex;
@@ -393,6 +414,10 @@
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     filter: saturate(1.8); }
     .articuloTabla4P .articuloC4P6P .contenidoC4P6P {
       display: flex;
@@ -409,6 +434,10 @@
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     filter: saturate(1.8); }
     .articuloTabla8P .articuloC8P10P .contenidoC8P10P {
       display: flex;
