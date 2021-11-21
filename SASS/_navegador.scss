@@ -5,24 +5,29 @@
 
 .contenedorCabecera{
     margin-top: 20px;
-    .contenedorNav{
-        border-radius: $bordes-redondeados;
-        ul{
-            font-size: map-get($tamañoTexto, tamañoNav);
-            @include flexbox_justify(space-between,wrap,row);
-            height: auto;
-            list-style: none;
-            align-content: stretch;
+    .filaHeader{
+        @include flexbox_justify(space-between,wrap,row);
+        .columnaNavegador{
+            align-self: center;
+            .contenedorNav{
+                border-radius: $bordes-redondeados;
+                ul{
+                    font-size: map-get($tamañoTexto, tamañoNav);
+                    @include flexbox_justify(space-between,wrap,row);
+                    height: auto;
+                    list-style: none;
+                    align-content: stretch;
+                }
+                a{
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
         }
-        a{
-            text-decoration: none;
-            color: #000;
+        .logoCabecera{
+            border-radius: 50px;
+            height: 20vh;
         }
-    }
-    
-    .logoCabecera{
-        border-radius: 50px;
-        height: 20vh;
     }
 }
 

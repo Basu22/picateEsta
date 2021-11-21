@@ -60,12 +60,16 @@
     height: auto;
     padding: 10px 20px;
     position: relative; }
+    .modalC2P3C .modalContenidoC2P3C p, .modalC4P6C .modalContenidoC4P6C p, .modalC8P10C .modalContenidoC8P10C p, .modalC2P3P .modalContenidoC2P3P p, .modalC4P6P .modalContenidoC4P6P p, .modalC8P10P .modalContenidoC8P10P p {
+      text-align: center;
+      margin-bottom: 0; }
     .modalC2P3C .modalContenidoC2P3C h2, .modalC4P6C .modalContenidoC4P6C h2, .modalC8P10C .modalContenidoC8P10C h2, .modalC2P3P .modalContenidoC2P3P h2, .modalC4P6P .modalContenidoC4P6P h2, .modalC8P10P .modalContenidoC8P10P h2 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1rem;
       color: #ffff;
       background-color: red; }
     .modalC2P3C .modalContenidoC2P3C ul, .modalC4P6C .modalContenidoC4P6C ul, .modalC8P10C .modalContenidoC8P10C ul, .modalC2P3P .modalContenidoC2P3P ul, .modalC4P6P .modalContenidoC4P6P ul, .modalC8P10P .modalContenidoC8P10P ul, .modalC2P3C .modalContenidoC2P3C li, .modalC4P6C .modalContenidoC4P6C li, .modalC8P10C .modalContenidoC8P10C li, .modalC2P3P .modalContenidoC2P3P li, .modalC4P6P .modalContenidoC4P6P li, .modalC8P10P .modalContenidoC8P10P li {
+      text-align: center;
       list-style: none;
       align-content: center;
       font-size: 0.75rem; }
@@ -176,23 +180,30 @@
 
 .contenedorCabecera {
   margin-top: 20px; }
-  .contenedorCabecera .contenedorNav {
-    border-radius: 20px; }
-    .contenedorCabecera .contenedorNav ul {
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      flex-direction: row;
-      height: auto;
-      list-style: none;
-      align-content: stretch; }
-    .contenedorCabecera .contenedorNav a {
-      text-decoration: none;
-      color: #000; }
-  .contenedorCabecera .logoCabecera {
-    border-radius: 50px;
-    height: 20vh; }
+  .contenedorCabecera .filaHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .contenedorCabecera .filaHeader .columnaNavegador {
+      align-self: center; }
+      .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav {
+        border-radius: 20px; }
+        .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul {
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          flex-direction: row;
+          height: auto;
+          list-style: none;
+          align-content: stretch; }
+        .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav a {
+          text-decoration: none;
+          color: #000; }
+    .contenedorCabecera .filaHeader .logoCabecera {
+      border-radius: 50px;
+      height: 20vh; }
 
 .contenedorParrafo {
   display: flex;
@@ -284,6 +295,30 @@
   .contenedorImgTablas .imagenTablas {
     border-radius: 20px;
     filter: saturate(1.8); }
+
+.modalC2P3C .modalContenidoC2P3C .listaModal {
+  margin: 0;
+  padding: 0; }
+
+.modalC4P6C .modalContenidoC4P6C .listaModal {
+  margin: 0;
+  padding: 0; }
+
+.modalC8P10C .modalContenidoC8P10C .listaModal {
+  margin: 0;
+  padding: 0; }
+
+.modalC2P3P .modalContenidoC2P3P .listaModal {
+  margin: 0;
+  padding: 0; }
+
+.modalC4P6P .modalContenidoC4P6P .listaModal {
+  margin: 0;
+  padding: 0; }
+
+.modalC8P10P .modalContenidoC8P10P .listaModal {
+  margin: 0;
+  padding: 0; }
 
 .articuloTabla2C {
   position: relative; }
@@ -425,10 +460,6 @@ footer {
   transition: 1s ease; }
 
 /* TABLAS */
-.articuloTabla:hover {
-  box-shadow: 0px -1px 10px 5px #7d7d7d;
-  border-radius: 20px; }
-
 .articuloC2P3C:hover .contenidoC2P3C {
   height: 100%; }
 
@@ -464,7 +495,16 @@ footer {
     height: 7vh; } }
 
 @media only screen and (max-width: 769px) {
-  .contenedorCabecera .row {
+  .contenedorCabecera .contenedorImagen {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  .contenedorCabecera .filaHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
     flex-direction: row-reverse; }
   .contenedorCabecera .contenedorNav {
     display: none; }
@@ -479,12 +519,15 @@ footer {
     .navegadorHamburguesa .listadoHamburguesa {
       display: none;
       background-color: rgba(0, 0, 0, 0.8);
-      width: 70%;
-      height: min-content;
+      width: 90vw;
+      height: auto;
       list-style: none;
       font-size: 1.5rem;
-      z-index: 5; }
+      transition: height 2s ease;
+      z-index: 99999;
+      padding-left: 0; }
       .navegadorHamburguesa .listadoHamburguesa li {
+        text-align: center;
         padding-top: 15px; }
         .navegadorHamburguesa .listadoHamburguesa li a {
           text-decoration: none;
@@ -495,7 +538,7 @@ footer {
         display: block;
         position: absolute; }
     .navegadorHamburguesa .imgHamburguesa {
-      height: 10vh; }
+      height: 5vh; }
   /* NOSOTROS */
   .fondoNosotrosuno {
     margin-bottom: 10px; }
@@ -505,166 +548,25 @@ footer {
     margin-bottom: 10px; }
   .fondoNosotroscuatro {
     margin-bottom: 10px; }
+  /* TABLAS */
+  .verContenido {
+    display: block; }
+  .articuloC2P3C:hover .contenidoC2P3C {
+    height: 0%; }
+  .articuloC4P6C:hover .contenidoC4P6C {
+    height: 0%; }
+  .articuloC8P10C:hover .contenidoC8P10C {
+    height: 0%; }
+  .articuloC2P3P:hover .contenidoC2P3P {
+    height: 0%; }
+  .articuloC4P6P:hover .contenidoC4P6P {
+    height: 0%; }
+  .articuloC8P10P:hover .contenidoC8P10P {
+    height: 0%; }
+  /* FIN TABLAS */
   .ContenedorImagenesNosotros .fondoNosotrosuno .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrosdos .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrostres .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotroscuatro .contenedorTexto {
     transform: scale(0.9); } }
 
 @media all and (max-width: 426px) {
-  .contenedorCabecera .row {
-    flex-direction: row-reverse; }
-  .contenedorCabecera .contenedorNav {
-    display: none; }
-  .textoPie {
-    text-align: center; }
-  .logoFace, .logoIG, .logoWts {
-    height: 10vh; }
-  .picadaIndex {
-    padding-bottom: 20px; }
-  .navegadorHamburguesa {
-    display: block; }
-    .navegadorHamburguesa .listadoHamburguesa {
-      display: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 70%;
-      height: min-content;
-      list-style: none;
-      font-size: 1.5rem; }
-      .navegadorHamburguesa .listadoHamburguesa li {
-        padding-top: 15px; }
-        .navegadorHamburguesa .listadoHamburguesa li a {
-          text-decoration: none;
-          color: #fff; }
-    .navegadorHamburguesa .checkHamburguesa {
-      display: none; }
-      .navegadorHamburguesa .checkHamburguesa:checked ~ .listadoHamburguesa {
-        display: block;
-        position: absolute; }
-    .navegadorHamburguesa .imgHamburguesa {
-      height: 10vh; }
-  /* NOSOTROS */
-  .fondoNosotrosuno {
-    margin-bottom: 10px; }
-  .fondoNosotrosdos {
-    margin-bottom: 10px; }
-  .fondoNosotrostres {
-    margin-bottom: 10px; }
-  .fondoNosotroscuatro {
-    margin-bottom: 10px; }
-  /* FIN NOSOTROS */
-  /* TABLAS */
-  .contenedorImgTablas {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 5%; }
-  /* FIN TABLAS */
-  .ContenedorImagenesNosotros .fondoNosotrosuno .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrosdos .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrostres .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotroscuatro .contenedorTexto {
-    transform: scale(0.9); } }
-
-@media all and (max-width: 376px) {
-  .textoPie {
-    text-align: center; }
-  .logoFace, .logoIG, .logoWts {
-    height: 10vh; }
-  .navegadorHamburguesa {
-    display: block; }
-    .navegadorHamburguesa .listadoHamburguesa {
-      display: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 70%;
-      height: min-content;
-      list-style: none;
-      font-size: 1.5rem;
-      transition: all 5s; }
-      .navegadorHamburguesa .listadoHamburguesa li {
-        padding-top: 15px; }
-        .navegadorHamburguesa .listadoHamburguesa li a {
-          text-decoration: none;
-          color: #fff; }
-    .navegadorHamburguesa .checkHamburguesa {
-      display: none; }
-      .navegadorHamburguesa .checkHamburguesa:checked ~ .listadoHamburguesa {
-        display: block;
-        position: absolute; }
-    .navegadorHamburguesa .imgHamburguesa {
-      height: 5vh; }
-  /* NOSOTROS */
-  .fondoNosotrosuno {
-    margin-bottom: 10px; }
-  .fondoNosotrosdos {
-    margin-bottom: 10px; }
-  .fondoNosotrostres {
-    margin-bottom: 10px; }
-  .fondoNosotroscuatro {
-    margin-bottom: 10px; }
-  /* FIN NOSOTROS */
-  /* TABLAS */
-  .contenedorImgTablas {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 5%; }
-  /* FIN TABLAS */
-  .ContenedorImagenesNosotros .fondoNosotrosuno .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrosdos .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrostres .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotroscuatro .contenedorTexto {
-    transform: scale(0.9); } }
-
-@media all and (max-width: 321px) {
-  /* NAVEGADOR */
-  .contenedorCabecera .row {
-    flex-direction: row-reverse; }
-  .contenedorCabecera .contenedorNav {
-    display: none; }
-  .navegadorHamburguesa {
-    display: block; }
-    .navegadorHamburguesa .listadoHamburguesa {
-      display: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 70%;
-      height: min-content;
-      list-style: none;
-      font-size: 1.5rem;
-      transition: height 2s ease; }
-      .navegadorHamburguesa .listadoHamburguesa li {
-        padding-top: 15px; }
-        .navegadorHamburguesa .listadoHamburguesa li a {
-          text-decoration: none;
-          color: #fff; }
-    .navegadorHamburguesa .checkHamburguesa {
-      display: none; }
-      .navegadorHamburguesa .checkHamburguesa:checked ~ .listadoHamburguesa {
-        display: block;
-        position: absolute; }
-    .navegadorHamburguesa .imgHamburguesa {
-      height: 5vh; }
-  /* FIN NAVEGADOR */
-  /* INDEX */
-  .picadaIndex {
-    padding-bottom: 20px; }
-  /* FIN INDEX */
-  /* NOSOTROS */
-  .fondoNosotrosuno {
-    margin-bottom: 10px; }
-  .fondoNosotrosdos {
-    margin-bottom: 10px; }
-  .fondoNosotrostres {
-    margin-bottom: 10px; }
-  .fondoNosotroscuatro {
-    margin-bottom: 10px; }
-  /* FIN NOSOTROS */
-  /* TABLAS */
-  .contenedorImgTablas {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 5%; }
-  /* FIN TABLAS */
-  /* FOOTER */
-  .textoPie {
-    text-align: center; }
-  .logoFace, .logoIG, .logoWts {
-    height: 10vh; }
-  /* FIN FOOTER */
-  .ContenedorImagenesNosotros .fondoNosotrosuno .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrosdos .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotrostres .contenedorTexto, .ContenedorImagenesNosotros .fondoNosotroscuatro .contenedorTexto {
-    transform: scale(0.9); } }
+  .contenedorCabecera .filaHeader .logoCabecera {
+    height: 15vh; } }

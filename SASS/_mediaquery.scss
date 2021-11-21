@@ -26,7 +26,11 @@
 
 @media only screen and (max-width:769px){
     .contenedorCabecera{
-        .row{
+        .contenedorImagen{
+            @include flexbox_justify(flex-end,wrap,row);
+        }
+        .filaHeader{
+            @include flexbox_justify(space-between,wrap,row);
             flex-direction: row-reverse;
         }
         .contenedorNav{
@@ -46,36 +50,9 @@
     }
 
     .navegadorHamburguesa{
-        display: block;
-        .listadoHamburguesa{
-            display: none;
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 70%;
-            height: min-content;
-            list-style: none;
-            font-size: map-get($tamañoTexto, tamañoNav);
-            z-index: 5;
-            li {
-                padding-top: 15px;            
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                }
-            }
-        }
-        .checkHamburguesa{
-            display:none;
-            &:checked  ~ .listadoHamburguesa{
-                display:block;
-                position: absolute;
-            }
-        }
-        .imgHamburguesa{
-            height: 10vh;
-        }
+        @include hamburguesa;
     }
-
-
+    
         /* NOSOTROS */
         .fondoNosotrosuno{
             margin-bottom: 10px;
@@ -90,242 +67,43 @@
             margin-bottom: 10px;
         }
     
+        /* TABLAS */
+        .verContenido{
+            display: block;
+        }
+    
+        .articuloC2P3C:hover .contenidoC2P3C {
+            height: 0%;
+        }
+        .articuloC4P6C:hover .contenidoC4P6C {
+            height: 0%;
+        }
+        .articuloC8P10C:hover .contenidoC8P10C {
+            height: 0%;
+        }
+        .articuloC2P3P:hover .contenidoC2P3P {
+            height: 0%;
+        }
+        .articuloC4P6P:hover .contenidoC4P6P {
+            height: 0%;
+        }
+        .articuloC8P10P:hover .contenidoC8P10P {
+            height: 0%;
+        }
+        /* FIN TABLAS */
+
         %animacionNosotros{
             transform: scale(0.9);
         }
 }
-
 
 @media all and (max-width:426px){
-
     .contenedorCabecera{
-        .row{
-            flex-direction: row-reverse;
-        }
-        .contenedorNav{
-            display: none;
-        }
-    }
-    
-    .textoPie{
-        text-align: center;
-    }
-    .logoFace, .logoIG, .logoWts {
-        height: 10vh;
-    }
-
-    .picadaIndex{
-        padding-bottom: 20px;
-    }
-
-    .navegadorHamburguesa{
-        display: block;
-        .listadoHamburguesa{
-            display: none;
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 70%; 
-            height: min-content;
-            list-style: none;
-            font-size: map-get($tamañoTexto, tamañoNav);
-            li {
-                padding-top: 15px;            
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                }
+        .filaHeader{
+            .logoCabecera{
+                height: 15vh;
             }
         }
-        .checkHamburguesa{
-            display:none;
-            &:checked  ~ .listadoHamburguesa{
-                display:block;
-                position: absolute;
-            }
-        }
-        .imgHamburguesa{
-            height: 10vh;
-        }
     }
-
-    /* NOSOTROS */
-    .fondoNosotrosuno{
-        margin-bottom: 10px;
-    }
-    .fondoNosotrosdos{
-        margin-bottom: 10px;
-    }
-    .fondoNosotrostres{
-        margin-bottom: 10px;
-    }
-    .fondoNosotroscuatro{
-        margin-bottom: 10px;
-    }
-    /* FIN NOSOTROS */
-        /* TABLAS */
-        .contenedorImgTablas{
-            @include flexbox_align(center,wrap,column);
-            margin-top: 5%;
-        }
-        /* FIN TABLAS */
-
-
-        %animacionNosotros{
-            transform: scale(0.9);
-        }
 }
 
-@media all and (max-width:376px){
-
-    .textoPie{
-        text-align: center;
-    }
-    .logoFace, .logoIG, .logoWts {
-        height: 10vh;
-    }
-    .navegadorHamburguesa{
-        display: block;
-        .listadoHamburguesa{
-            display: none;
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 70%;
-            height: min-content;
-            list-style: none;
-            font-size: map-get($tamañoTexto, tamañoNav);
-            transition: all 5s;
-            li {
-                padding-top: 15px;            
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                }
-            }
-        }
-        .checkHamburguesa{
-            display:none;
-            &:checked  ~ .listadoHamburguesa{
-                display:block;
-                position: absolute;
-            }
-        }
-        .imgHamburguesa{
-            height: 5vh;
-        }
-    }
-
-    /* NOSOTROS */
-    .fondoNosotrosuno{
-        margin-bottom: 10px;
-    }
-    .fondoNosotrosdos{
-        margin-bottom: 10px;
-    }
-    .fondoNosotrostres{
-        margin-bottom: 10px;
-    }
-    .fondoNosotroscuatro{
-        margin-bottom: 10px;
-    }
-    /* FIN NOSOTROS */
-        /* TABLAS */
-        .contenedorImgTablas{
-            @include flexbox_align(center,wrap,column);
-            margin-top: 5%;
-        }
-        /* FIN TABLAS */
-
-
-        %animacionNosotros{
-            transform: scale(0.9);
-        }
-}
-
-
-
-
-@media all and (max-width:321px){ 
-    /* NAVEGADOR */
-    
-    .contenedorCabecera{
-        .row{
-            flex-direction: row-reverse;
-        }
-        .contenedorNav{
-            display: none;
-        }
-    }
-    .navegadorHamburguesa{
-        display: block;
-        .listadoHamburguesa{
-            display: none;
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 70%;
-            height: min-content;
-            list-style: none;
-            font-size: map-get($tamañoTexto, tamañoNav);
-            transition: height 2s ease ;
-            li {
-                padding-top: 15px;            
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                }
-            }
-        }
-        .checkHamburguesa{
-            display:none;
-            &:checked  ~ .listadoHamburguesa{
-                display:block;
-                position: absolute;
-            }
-        }
-        .imgHamburguesa{
-            height: 5vh;
-        }
-    }
-    
-    /* FIN NAVEGADOR */
-    /* INDEX */
-    
-    .picadaIndex{
-        padding-bottom: 20px;
-    }
-    
-    /* FIN INDEX */
-
-    /* NOSOTROS */
-    .fondoNosotrosuno{
-        margin-bottom: 10px;
-    }
-    .fondoNosotrosdos{
-        margin-bottom: 10px;
-    }
-    .fondoNosotrostres{
-        margin-bottom: 10px;
-    }
-    .fondoNosotroscuatro{
-        margin-bottom: 10px;
-    }
-    /* FIN NOSOTROS */
-    
-    /* TABLAS */
-    .contenedorImgTablas{
-        @include flexbox_align(center,wrap,column);
-        margin-top: 5%;
-    }
-    /* FIN TABLAS */
-    /* FOOTER */
-    
-    .textoPie{
-        text-align: center;
-    }
-    .logoFace, .logoIG, .logoWts {
-        height: 10vh;
-    }
-    
-    /* FIN FOOTER */
-
-    %animacionNosotros{
-        transform: scale(0.9);
-    }
-
-}
