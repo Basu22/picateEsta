@@ -68,10 +68,11 @@
         }
     
         /* TABLAS */
-        .verContenido{
-            display: block;
+        .contenedorContenido{
+            .verContenido{
+                display: block;
+            }
         }
-    
         .articuloC2P3C:hover .contenidoC2P3C {
             height: 0%;
         }

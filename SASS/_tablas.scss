@@ -1,13 +1,18 @@
-.verContenido{
-    display: none;
+.cerrar{
     text-decoration: none;
-    background-color: rgba(255, 0, 0, 0.57);
-    color: #fff;
-    width: 50%;
-    border-radius: $bordes-redondeados;
 }
 
-
+.contenedorContenido{
+    @include flexbox_justify (center,wrap,row);
+    .verContenido{
+        display: none;
+        text-decoration: none;
+        background-color: rgba(255, 0, 0, 0.57);
+        color: #fff;
+        width: 50%;
+        border-radius: $bordes-redondeados;
+    }
+}
 
 .contenedorImgTablas{
     @include flexbox_justify (center,wrap,column);
@@ -21,6 +26,9 @@
 .modalC2P3C{
     @extend %modalTablas;
     .modalContenidoC2P3C{
+        h2{
+            margin-top: 5px;
+        }
         @extend %modalContenido;
         .listaModal{
             margin:0;
@@ -32,6 +40,9 @@
 .modalC4P6C{
     @extend %modalTablas;
     .modalContenidoC4P6C{
+        h2{
+            margin-top: 5px;
+        }
         @extend %modalContenido;
         .listaModal{
             margin:0;
@@ -43,6 +54,9 @@
 .modalC8P10C{
     @extend %modalTablas;
     .modalContenidoC8P10C{
+        h2{
+            margin-top: 5px;
+        }
         @extend %modalContenido;
         .listaModal{
             margin:0;
@@ -54,6 +68,9 @@
 .modalC2P3P{
     @extend %modalTablas;
     .modalContenidoC2P3P{
+        h2{
+            margin-top: 5px;
+        }
         @extend %modalContenido;
         .listaModal{
             margin:0;
@@ -65,6 +82,9 @@
 .modalC4P6P{
     @extend %modalTablas;
     .modalContenidoC4P6P{
+        h2{
+            margin-top: 5px;
+        }
         @extend %modalContenido;
         .listaModal{
             margin:0;
@@ -76,6 +96,9 @@
 .modalC8P10P{
     @extend %modalTablas;
     .modalContenidoC8P10P{
+        h2{
+            margin-top: 5px;
+        }
         @extend %modalContenido;
         .listaModal{
             margin:0;
@@ -161,6 +184,12 @@
             @extend %animacionCoverTablas;
         }
     }
+}
+
+.listaModal{
+    border: 1px solid rgba(0, 0, 0, 0.57);
+    border-radius: $bordes-redondeados;
+    margin-bottom: 5px;
 }
 
 .listaQuesos{

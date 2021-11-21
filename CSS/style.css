@@ -284,13 +284,21 @@
 .listaProducto li {
   font-size: 1.2rem; }
 
-.verContenido {
-  display: none;
-  text-decoration: none;
-  background-color: rgba(255, 0, 0, 0.57);
-  color: #fff;
-  width: 50%;
-  border-radius: 20px; }
+.cerrar {
+  text-decoration: none; }
+
+.contenedorContenido {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .contenedorContenido .verContenido {
+    display: none;
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, 0.57);
+    color: #fff;
+    width: 50%;
+    border-radius: 20px; }
 
 .contenedorImgTablas {
   display: flex;
@@ -301,25 +309,43 @@
     border-radius: 20px;
     filter: saturate(1.8); }
 
+.modalC2P3C .modalContenidoC2P3C h2 {
+  margin-top: 5px; }
+
 .modalC2P3C .modalContenidoC2P3C .listaModal {
   margin: 0;
   padding: 0; }
+
+.modalC4P6C .modalContenidoC4P6C h2 {
+  margin-top: 5px; }
 
 .modalC4P6C .modalContenidoC4P6C .listaModal {
   margin: 0;
   padding: 0; }
 
+.modalC8P10C .modalContenidoC8P10C h2 {
+  margin-top: 5px; }
+
 .modalC8P10C .modalContenidoC8P10C .listaModal {
   margin: 0;
   padding: 0; }
+
+.modalC2P3P .modalContenidoC2P3P h2 {
+  margin-top: 5px; }
 
 .modalC2P3P .modalContenidoC2P3P .listaModal {
   margin: 0;
   padding: 0; }
 
+.modalC4P6P .modalContenidoC4P6P h2 {
+  margin-top: 5px; }
+
 .modalC4P6P .modalContenidoC4P6P .listaModal {
   margin: 0;
   padding: 0; }
+
+.modalC8P10P .modalContenidoC8P10P h2 {
+  margin-top: 5px; }
 
 .modalC8P10P .modalContenidoC8P10P .listaModal {
   margin: 0;
@@ -444,6 +470,11 @@
       align-content: center;
       flex-wrap: wrap;
       flex-direction: row; }
+
+.listaModal {
+  border: 1px solid rgba(0, 0, 0, 0.57);
+  border-radius: 20px;
+  margin-bottom: 5px; }
 
 .listaQuesos {
   margin-top: 10px; }
@@ -578,7 +609,7 @@ footer {
   .fondoNosotroscuatro {
     margin-bottom: 10px; }
   /* TABLAS */
-  .verContenido {
+  .contenedorContenido .verContenido {
     display: block; }
   .articuloC2P3C:hover .contenidoC2P3C {
     height: 0%; }
