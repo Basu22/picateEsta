@@ -67,18 +67,31 @@
       text-align: center;
       font-size: 1rem;
       color: #ffff;
-      background-color: red; }
+      background-color: rgba(255, 0, 0, 0.57);
+      border-radius: 20px; }
     .modalC2P3C .modalContenidoC2P3C ul, .modalC4P6C .modalContenidoC4P6C ul, .modalC8P10C .modalContenidoC8P10C ul, .modalC2P3P .modalContenidoC2P3P ul, .modalC4P6P .modalContenidoC4P6P ul, .modalC8P10P .modalContenidoC8P10P ul, .modalC2P3C .modalContenidoC2P3C li, .modalC4P6C .modalContenidoC4P6C li, .modalC8P10C .modalContenidoC8P10C li, .modalC2P3P .modalContenidoC2P3P li, .modalC4P6P .modalContenidoC4P6P li, .modalC8P10P .modalContenidoC8P10P li {
       text-align: center;
       list-style: none;
       align-content: center;
-      font-size: 0.75rem; }
+      font-size: 1rem; }
+    .modalC2P3C .modalContenidoC2P3C .listaModal, .modalC4P6C .modalContenidoC4P6C .listaModal, .modalC8P10C .modalContenidoC8P10C .listaModal, .modalC2P3P .modalContenidoC2P3P .listaModal, .modalC4P6P .modalContenidoC4P6P .listaModal, .modalC8P10P .modalContenidoC8P10P .listaModal {
+      margin: 0;
+      padding: 0; }
+    .modalC2P3C .modalContenidoC2P3C .pedilaYa a, .modalC4P6C .modalContenidoC4P6C .pedilaYa a, .modalC8P10C .modalContenidoC8P10C .pedilaYa a, .modalC2P3P .modalContenidoC2P3P .pedilaYa a, .modalC4P6P .modalContenidoC4P6P .pedilaYa a, .modalC8P10P .modalContenidoC8P10P .pedilaYa a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center; }
 
 .articuloTabla2C .articuloC2P3C .contenidoC2P3C h2, .articuloTabla4C .articuloC4P6C .contenidoC4P6C h2, .articuloTabla8C .articuloC8P10C .contenidoC8P10C h2, .articuloTabla2P .articuloC2P3P .contenidoC2P3P h2, .articuloTabla4P .articuloC4P6P .contenidoC4P6P h2, .articuloTabla8P .articuloC8P10P .contenidoC8P10P h2, .tituloLista {
   text-align: center;
   font-size: 1rem;
+  border-radius: 20px;
   color: #ffff;
-  background-color: red; }
+  background-color: rgba(255, 0, 0, 0.57); }
 
 #modalC2P3C:target, #modalC4P6C:target, #modalC8P10C:target, #modalC2P3P:target, #modalC4P6P:target, #modalC8P10P:target {
   opacity: 1;
@@ -109,6 +122,15 @@
     color: #ffff;
     text-align: center;
     font-size: 0.75rem; }
+  .articuloTabla2C .articuloC2P3C .contenidoC2P3C .pedilaYa, .articuloTabla4C .articuloC4P6C .contenidoC4P6C .pedilaYa, .articuloTabla8C .articuloC8P10C .contenidoC8P10C .pedilaYa, .articuloTabla2P .articuloC2P3P .contenidoC2P3P .pedilaYa, .articuloTabla4P .articuloC4P6P .contenidoC4P6P .pedilaYa, .articuloTabla8P .articuloC8P10P .contenidoC8P10P .pedilaYa {
+    position: absolute;
+    top: 42%;
+    left: 47%; }
+    .articuloTabla2C .articuloC2P3C .contenidoC2P3C .pedilaYa a, .articuloTabla4C .articuloC4P6C .contenidoC4P6C .pedilaYa a, .articuloTabla8C .articuloC8P10C .contenidoC8P10C .pedilaYa a, .articuloTabla2P .articuloC2P3P .contenidoC2P3P .pedilaYa a, .articuloTabla4P .articuloC4P6P .contenidoC4P6P .pedilaYa a, .articuloTabla8P .articuloC8P10P .contenidoC8P10P .pedilaYa a {
+      text-decoration: none;
+      color: #fff; }
+      .articuloTabla2C .articuloC2P3C .contenidoC2P3C .pedilaYa a .logoWts, .articuloTabla4C .articuloC4P6C .contenidoC4P6C .pedilaYa a .logoWts, .articuloTabla8C .articuloC8P10C .contenidoC8P10C .pedilaYa a .logoWts, .articuloTabla2P .articuloC2P3P .contenidoC2P3P .pedilaYa a .logoWts, .articuloTabla4P .articuloC4P6P .contenidoC4P6P .pedilaYa a .logoWts, .articuloTabla8P .articuloC8P10P .contenidoC8P10P .pedilaYa a .logoWts {
+        width: 5vh; }
 
 * {
   padding: 0px;
@@ -284,8 +306,9 @@
 .listaProducto li {
   font-size: 1.2rem; }
 
-.cerrar {
-  text-decoration: none; }
+.volver {
+  text-decoration: none;
+  color: #000; }
 
 .contenedorContenido {
   display: flex;
@@ -312,44 +335,20 @@
 .modalC2P3C .modalContenidoC2P3C h2 {
   margin-top: 5px; }
 
-.modalC2P3C .modalContenidoC2P3C .listaModal {
-  margin: 0;
-  padding: 0; }
-
 .modalC4P6C .modalContenidoC4P6C h2 {
   margin-top: 5px; }
-
-.modalC4P6C .modalContenidoC4P6C .listaModal {
-  margin: 0;
-  padding: 0; }
 
 .modalC8P10C .modalContenidoC8P10C h2 {
   margin-top: 5px; }
 
-.modalC8P10C .modalContenidoC8P10C .listaModal {
-  margin: 0;
-  padding: 0; }
-
 .modalC2P3P .modalContenidoC2P3P h2 {
   margin-top: 5px; }
-
-.modalC2P3P .modalContenidoC2P3P .listaModal {
-  margin: 0;
-  padding: 0; }
 
 .modalC4P6P .modalContenidoC4P6P h2 {
   margin-top: 5px; }
 
-.modalC4P6P .modalContenidoC4P6P .listaModal {
-  margin: 0;
-  padding: 0; }
-
 .modalC8P10P .modalContenidoC8P10P h2 {
   margin-top: 5px; }
-
-.modalC8P10P .modalContenidoC8P10P .listaModal {
-  margin: 0;
-  padding: 0; }
 
 .articuloTabla2C {
   position: relative; }

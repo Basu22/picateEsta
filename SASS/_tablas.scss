@@ -1,5 +1,6 @@
-.cerrar{
+.volver{
     text-decoration: none;
+    color: #000;
 }
 
 .contenedorContenido{
@@ -30,10 +31,6 @@
             margin-top: 5px;
         }
         @extend %modalContenido;
-        .listaModal{
-            margin:0;
-            padding:0;
-        }
     }
 }
 
@@ -44,10 +41,6 @@
             margin-top: 5px;
         }
         @extend %modalContenido;
-        .listaModal{
-            margin:0;
-            padding:0;
-        }
     }
 }
 
@@ -58,10 +51,6 @@
             margin-top: 5px;
         }
         @extend %modalContenido;
-        .listaModal{
-            margin:0;
-            padding:0;
-        }
     }
 }
 
@@ -72,10 +61,6 @@
             margin-top: 5px;
         }
         @extend %modalContenido;
-        .listaModal{
-            margin:0;
-            padding:0;
-        }
     }
 }
 
@@ -86,10 +71,6 @@
             margin-top: 5px;
         }
         @extend %modalContenido;
-        .listaModal{
-            margin:0;
-            padding:0;
-        }
     }
 }
 
@@ -100,10 +81,6 @@
             margin-top: 5px;
         }
         @extend %modalContenido;
-        .listaModal{
-            margin:0;
-            padding:0;
-        }
     }
 }
 

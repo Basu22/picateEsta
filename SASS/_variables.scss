@@ -149,13 +149,26 @@ $coloresMaps:(
             text-align: center;
             font-size: map-get($tamañoTexto, tamañoP);
             color: #ffff;
-            background-color: red;
+            background-color: rgba(255, 0, 0, 0.57);
+            border-radius: $bordes-redondeados;
         }
         ul,li{
             text-align: center;
             list-style: none;
             align-content: center;
-            font-size:map-get($tamañoTexto, tamañoLItablas);
+            font-size:map-get($tamañoTexto, tamañoP);
+        }
+        .listaModal{
+            margin:0;
+            padding:0;
+        }
+        .pedilaYa{
+            a{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                @include flexbox_justify(space-evenly,wrap,row);
+                align-items: center;
+            }
         }
     }    
 }
@@ -163,8 +176,9 @@ $coloresMaps:(
 %tituloTablas{
     text-align: center;
     font-size:map-get($tamañoTexto, tamañoP);
+    border-radius: $bordes-redondeados;
     color: #ffff;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.57);
 }
 
 %animacionModal{
@@ -198,6 +212,18 @@ $coloresMaps:(
         color: #ffff;
         text-align: center;
         font-size: map-get($tamañoTexto, tamañoLItablas);
+    }
+    .pedilaYa{
+        position:absolute;
+        top:42%;
+        left:47%;
+        a{
+            text-decoration: none;
+            color: #fff;
+            .logoWts{
+                width: $iconos-redes;
+            }
+        }
     }
 }
 
