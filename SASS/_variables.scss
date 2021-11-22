@@ -20,6 +20,7 @@ $menuHamburguesa: 5vh;
 $tamañoTexto:(
     tamañoH1: 3rem,
     tamañoH2: 2rem,
+    tamañoH3: 1.5rem,
     tamañoP:  1rem,
     tamañoNav: 1.5rem,
     tamañoLItablas: 0.75rem,
@@ -89,6 +90,10 @@ $coloresMaps:(
     }
 }
 
+@mixin imgResponsive {
+    max-width: 100%;
+    height: auto;
+}
 
 /*  */
 

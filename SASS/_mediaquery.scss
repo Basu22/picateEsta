@@ -96,13 +96,29 @@
         %animacionNosotros{
             transform: scale(0.9);
         }
+    
+    footer{
+        .seccionIconos{
+            @include flexbox_justify (center,wrap,row);
+        }
+        .seccionPie 
+            .filaTextopie {
+                .filaGps{
+                    .articuloGps{
+                            .logoGps {
+                                height: 15vh;
+                        } 
+                    } 
+                }
+        }
+    }
 }
 
 @media all and (max-width:426px){
     .contenedorCabecera{
         .filaHeader{
             .logoCabecera{
-                height: 15vh;
+                height: 10vh;
             }
         }
     }

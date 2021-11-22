@@ -1,20 +1,57 @@
 footer{
     background-color: #000;
-
-    .logoFace{
-        height: $iconos-redes;
-    }
-    .logoIG{
-        height: $iconos-redes;
-    }
-    .logoWts{
-        height: $iconos-redes;
-    }
-    .textoPie{
-        color: #fff;
-        font-size: map-get($tamañoTexto, tamañoP);
-    }
+    .seccionPie{
+        .filaTextopie{
+            @include flexbox_justify (flex-end,wrap,row);
+            align-content: stretch;
+                .seccionTexto{
+                    .textoLogo{
+                        @include flexbox_align (center,wrap,row);
+                        justify-content: center;
+                        .textoPie{
+                            color: #fff;
+                            font-size: map-get($tamañoTexto, tamañoH3);
+                            text-align: center;
+                        }
+                    }
+                    .filaLogo{
+                        .articuloLogo{
+                            @include flexbox_justify (center,wrap,row);
+                            .logoFooter{
+                                height: 15vh;
+                            }
+                        }
+                    }
+                }
+                .filaGps{
+                    .textoPie{
+                        color: #fff;
+                        font-size: map-get($tamañoTexto, tamañoP);
+                        text-align: center;
+                    }
+                    .articuloGps{
+                        @include flexbox_justify (center,wrap,row);
+                            .logoGps{
+                                height: $iconos-redes;
+                            }
+                    }
+                }
+            }
+        }
+    .seccionIconos{
+        @include flexbox_justify (flex-end,wrap,row);
+        .filaRedes{
+                .logoFace{
+                    height: $iconos-redes;
+                }
+                .logoIG{
+                    height: $iconos-redes;
+                }
+                .logoWts{
+                    height: $iconos-redes;
+                }
+            }
+        }
 }
-
 
 

@@ -176,3 +176,7 @@
     @extend %tituloTablas;
     font-size:map-get($tamañoTexto, tamañoLItablas);
 }
+
+.filaClasica{
+    @include flexbox_justify (center,wrap,row);
+}
