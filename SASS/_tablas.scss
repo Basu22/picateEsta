@@ -177,6 +177,6 @@
     font-size:map-get($tamañoTexto, tamañoLItablas);
 }
 
-.filaClasica{
+.grupoClasica{
     @include flexbox_justify (center,wrap,row);
 }

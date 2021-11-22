@@ -489,7 +489,7 @@
 .tituloLista {
   font-size: 0.75rem; }
 
-.filaClasica {
+.grupoClasica {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
