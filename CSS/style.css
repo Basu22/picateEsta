@@ -685,4 +685,7 @@ footer {
 
 @media all and (max-width: 426px) {
   .contenedorCabecera .filaHeader .logoCabecera {
-    height: 10vh; } }
+    height: 10vh; }
+  .articuloProductos .imgProductos {
+    height: 300px;
+    object-fit: cover; } }
