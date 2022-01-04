@@ -528,7 +528,9 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  border: 1px solid #000; }
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin: 2% 0; }
   .textoCarrito .seccionImagenes {
     display: flex;
     justify-content: center;
@@ -787,15 +789,19 @@ footer {
   .articuloProductos .imgProductos {
     height: 300px;
     object-fit: cover; }
-  .textoCarrito .seccionImagenes {
-    transform: rotate(-90deg); }
-  .textoCarrito .seccionCantidades {
-    margin: 10% 0;
-    font-size: 0.9rem; }
-    .textoCarrito .seccionCantidades .cantidadPedido {
-      font-size: 1.5rem; }
-    .textoCarrito .seccionCantidades .precioFinal {
-      font-size: 1.2rem; }
+  .textoCarrito {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin: 2% 0; }
+    .textoCarrito .seccionImagenes {
+      transform: rotate(-90deg); }
+    .textoCarrito .seccionCantidades {
+      margin: 10% 0;
+      font-size: 0.9rem; }
+      .textoCarrito .seccionCantidades .cantidadPedido {
+        font-size: 1.5rem; }
+      .textoCarrito .seccionCantidades .precioFinal {
+        font-size: 1.2rem; }
   #textoTotal {
     display: flex;
     justify-content: center;

@@ -5,7 +5,9 @@
 }
 .textoCarrito{
     @include flexbox_justify (center,wrap,row);
-    border: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin:2% 0;
     .seccionImagenes{
         @include flexbox_justify(center,wrap,row);
         margin-bottom: 10px;
