@@ -180,3 +180,16 @@
 .grupoClasica{
     @include flexbox_justify (center,wrap,row);
 }
+
+.filaCarrito{
+    top:85%;
+    @include flexbox_justify (center,wrap,row);
+    align-items: center;
+    img{
+        cursor: pointer;
+        height: 10vh;
+    }
+    #cantidadPicadas{
+        font-size: 2rem;
+    }
+}

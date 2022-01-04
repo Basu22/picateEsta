@@ -1,0 +1,52 @@
+.tituloCarrito{
+    padding: 2% 0;
+    @include flexbox_align (center,wrap,column);
+    text-align: center;
+}
+.textoCarrito{
+    @include flexbox_justify (center,wrap,row);
+    .seccionImagenes{
+        @include flexbox_justify(center,wrap,row);
+        margin-bottom: 10px;
+        .imgCarrito{
+            @include flexbox_justify(center,wrap,row);
+            align-content: center;
+            img{
+                height: 15vh;
+            }
+        }
+    }
+    .seccionCantidades{
+        @include flexbox_justify (space-around,wrap,row);
+        align-content: center;
+        .cantidadPedido{
+            padding: 5px;
+            @include flexbox_justify(space-around,wrap,row);
+            align-content: center;
+        }
+        .armadoPedido{
+            padding: 5px;
+            @include flexbox_justify(space-around,wrap,row);
+            align-content: center;
+        }
+        .precioFinal{
+            @include flexbox_justify(space-around,wrap,row);
+            align-content: center;
+        }
+        .borrarCarrito{
+            @include flexbox_justify(center,wrap,row);
+            align-content: center;
+            img{
+                cursor: pointer;
+                height: 50px;
+            }
+        }
+    }
+}
+
+#textoTotal{
+    @include flexbox_justify(flex-end,wrap,row);
+    p{
+        font-size: 1.5rem;
+    }
+}

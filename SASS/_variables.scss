@@ -70,11 +70,15 @@ $coloresMaps:(
         font-size: map-get($tamañoTexto, tamañoNav);
         transition: height 2s ease ;
         z-index: 999999;
+        top:10%;
         li {
             padding-top: 15px;            
             a{
                 text-decoration: none;
                 color: #fff;
+            }
+            .carritoCompra{
+                height: 7vh;
             }
         }
     }

@@ -228,6 +228,8 @@
           height: auto;
           list-style: none;
           align-content: stretch; }
+          .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul .carritoCompra {
+            height: 7vh; }
         .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav a {
           text-decoration: none;
           color: #000; }
@@ -495,10 +497,94 @@
   flex-wrap: wrap;
   flex-direction: row; }
 
+.filaCarrito {
+  top: 85%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center; }
+  .filaCarrito img {
+    cursor: pointer;
+    height: 10vh; }
+  .filaCarrito #cantidadPicadas {
+    font-size: 2rem; }
+
 .textoContacto .parrafoContacto {
   margin: 1% 0;
   padding: 1% 0;
   font-size: 1rem; }
+
+.tituloCarrito {
+  padding: 2% 0;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center; }
+
+.textoCarrito {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .textoCarrito .seccionImagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 10px; }
+    .textoCarrito .seccionImagenes .imgCarrito {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center; }
+      .textoCarrito .seccionImagenes .imgCarrito img {
+        height: 15vh; }
+  .textoCarrito .seccionCantidades {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center; }
+    .textoCarrito .seccionCantidades .cantidadPedido {
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center; }
+    .textoCarrito .seccionCantidades .armadoPedido {
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center; }
+    .textoCarrito .seccionCantidades .precioFinal {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center; }
+    .textoCarrito .seccionCantidades .borrarCarrito {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center; }
+      .textoCarrito .seccionCantidades .borrarCarrito img {
+        cursor: pointer;
+        height: 50px; }
+
+#textoTotal {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  #textoTotal p {
+    font-size: 1.5rem; }
 
 footer {
   background-color: #000; }
@@ -624,7 +710,11 @@ footer {
   .picadaIndex {
     padding-bottom: 20px; }
   .navegadorHamburguesa {
-    display: block; }
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row; }
     .navegadorHamburguesa .listadoHamburguesa {
       display: none;
       background-color: rgba(0, 0, 0, 0.8);
@@ -648,6 +738,8 @@ footer {
         position: absolute; }
     .navegadorHamburguesa .imgHamburguesa {
       height: 5vh; }
+    .navegadorHamburguesa a img {
+      height: 10vh; }
   /* NOSOTROS */
   .fondoNosotrosuno {
     margin-bottom: 10px; }
@@ -684,8 +776,26 @@ footer {
     height: 15vh; } }
 
 @media all and (max-width: 426px) {
+  .navegadorHamburguesa a img {
+    height: 7vh; }
   .contenedorCabecera .filaHeader .logoCabecera {
     height: 10vh; }
   .articuloProductos .imgProductos {
     height: 300px;
-    object-fit: cover; } }
+    object-fit: cover; }
+  .textoCarrito .seccionImagenes {
+    transform: rotate(-90deg); }
+  .textoCarrito .seccionCantidades {
+    margin: 10% 0;
+    font-size: 0.9rem; }
+    .textoCarrito .seccionCantidades .cantidadPedido {
+      font-size: 1.5rem; }
+    .textoCarrito .seccionCantidades .precioFinal {
+      font-size: 1.2rem; }
+  #textoTotal {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    #textoTotal p {
+      font-size: 1.2rem; } }

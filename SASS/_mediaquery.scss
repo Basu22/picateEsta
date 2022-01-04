@@ -51,6 +51,12 @@
 
     .navegadorHamburguesa{
         @include hamburguesa;
+        @include flexbox_justify (space-between,wrap,row);
+        a{
+            img{
+                height: 10vh;
+            }
+        }
     }
     
         /* NOSOTROS */
@@ -115,6 +121,15 @@
 }
 
 @media all and (max-width:426px){
+    
+    .navegadorHamburguesa{
+        a{
+            img{
+                height: 7vh;
+            }
+        }
+    }
+    
     .contenedorCabecera{
         .filaHeader{
             .logoCabecera{
@@ -129,5 +144,29 @@
         }
     }
 
-}
+    .textoCarrito{
+        hr{
 
+        }
+        .seccionImagenes{
+            transform: rotate(-90deg);
+
+        }    
+        .seccionCantidades{
+            margin: 10% 0;
+            font-size: 0.9rem;
+            .cantidadPedido{
+                font-size: 1.5rem;
+            }
+            .precioFinal{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    #textoTotal{
+        @include flexbox_justify(flex-end,wrap,row);
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
