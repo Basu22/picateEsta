@@ -5,6 +5,7 @@
 }
 .textoCarrito{
     @include flexbox_justify (center,wrap,row);
+    border: 1px solid #000;
     .seccionImagenes{
         @include flexbox_justify(center,wrap,row);
         margin-bottom: 10px;
@@ -47,6 +48,9 @@
 #textoTotal{
     @include flexbox_justify(flex-end,wrap,row);
     p{
+        padding: 1%;
+        background-color: #000;
+        color: #fff;
         font-size: 1.5rem;
     }
 }

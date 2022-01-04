@@ -6,7 +6,6 @@ function textoCarrito(arrayCarrito){
         if (carrito){
             $('#textoCarrito').append(` 
                                         <section class="row textoCarrito">
-                                            <hr>    
                                                 <section class="col-4 col-lg-3 seccionImagenes">
                                                     <article class="imgCarrito col-12 col-lg-12">
                                                         <img id=${carrito.id} src=${carrito.img} alt="Presentacion ${carrito.tipo} ${carrito.tabla}" loading="lazy"> 
@@ -26,8 +25,6 @@ function textoCarrito(arrayCarrito){
                                                         <img class="logoFace img-fluid" id="borrarCarrito" src="./img/carrito/restaCarrito.png" alt="">
                                                     </article>
                                                 </section>
-                                                </br>
-                                                <hr>
                                         </section>`);
         }
     }

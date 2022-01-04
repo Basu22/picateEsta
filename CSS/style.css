@@ -527,7 +527,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  border: 1px solid #000; }
   .textoCarrito .seccionImagenes {
     display: flex;
     justify-content: center;
@@ -584,6 +585,9 @@
   flex-wrap: wrap;
   flex-direction: row; }
   #textoTotal p {
+    padding: 1%;
+    background-color: #000;
+    color: #fff;
     font-size: 1.5rem; }
 
 footer {
@@ -794,8 +798,13 @@ footer {
       font-size: 1.2rem; }
   #textoTotal {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row; }
+    flex-direction: row;
+    align-content: center; }
     #textoTotal p {
+      margin: 2%;
+      padding: 2%;
+      background-color: #000;
+      color: #fff;
       font-size: 1.2rem; } }

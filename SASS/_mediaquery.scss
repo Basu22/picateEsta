@@ -145,9 +145,6 @@
     }
 
     .textoCarrito{
-        hr{
-
-        }
         .seccionImagenes{
             transform: rotate(-90deg);
 
@@ -164,8 +161,13 @@
         }
     }
     #textoTotal{
-        @include flexbox_justify(flex-end,wrap,row);
+        @include flexbox_justify(center,wrap,row);
+        align-content: center;
         p{
+            margin: 2%;
+            padding: 2%;
+            background-color: #000;
+            color: #fff;
             font-size: 1.2rem;
         }
     }

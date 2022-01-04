@@ -15,8 +15,8 @@ function eliminarCarrito (e){
     if (localCarrito){
             carrito = localCarrito
     }
-    
-    let i = carrito.findIndex(producto => producto.id == e.target.parentNode.parentNode.parentNode.children[1].children[0].children[0].id)
+    console.log(e.target.parentNode.parentNode.parentNode.children[0].children[0].children[0].id)
+    let i = carrito.findIndex(producto => producto.id == e.target.parentNode.parentNode.parentNode.children[0].children[0].children[0].id)
     if(e.target.parentNode.parentNode.children[1].innerText.slice(1)>1){
         restaTotalCarrito(e)// llamo a la resta del carrito 
         carrito[i].cantidad -= 1
