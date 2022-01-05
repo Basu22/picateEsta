@@ -22,7 +22,7 @@ function agregarPicada(arrayPicada){
                                         </article>
                                         <section  class="col-12 filaCarrito">
                                             <article class="col-2">   
-                                                <img class="logoFace img-fluid" id="addCarrito" src="./img/carrito/sumaCarrito.png" alt="">
+                                                <img class="logoFace" id="addCarrito" src="./img/carrito/sumaCarrito.png" alt="">
                                             </article>
                                         </section>
                                     </section>
