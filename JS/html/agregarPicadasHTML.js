@@ -22,7 +22,13 @@ function agregarPicada(arrayPicada){
                                         </article>
                                         <section  class="col-12 filaCarrito">
                                             <article class="col-2">   
-                                                <img class="logoFace" id="addCarrito" src="./img/carrito/sumaCarrito.png" alt="">
+                                                <img class="logoFace" id="add${picada.id}" src="./img/carrito/sumaCarrito.png" alt="">
+                                            </article>
+                                            <article class="cantidadPedido col-3 col-lg-1">
+                                                <p id="cantidad${picada.id}" class="cantidadPedido"></p>
+                                            </article>
+                                            <article class="borrarCarrito col-lg-1">
+                                                <img class="logoFace" id="resta${picada.id}" src="./img/carrito/restaCarrito.png" alt="">
                                             </article>
                                         </section>
                                     </section>
@@ -42,5 +48,15 @@ agregarPicada(picadasClasicas);
 //agrego las picadas premiun del array
 agregarPicada(picadasPremium);
 
+
+// ACTUALIZO LA CANTIDAD SIEMPRE CON EL LOCAL STORAGE //
+//para validar que existe un valor en localStorage y no reiniciar tomamos su valor en una variable
+localCarrito = JSON.parse(localStorage.getItem("carrito"));
+//validamos que exista data, si no existe crea desde cero sino toma el valor del localstorage y se lo da al array de los productos.
+if (localCarrito){
+    for (const picada of localCarrito) {
+        $(`#cantidad${picada.id}`)[0].innerHTML="x "+picada.cantidad
+    }
+}
 
 

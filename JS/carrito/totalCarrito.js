@@ -5,13 +5,13 @@ function sumaTotalCarrito (){
     $('#textoTotal').addClass("textoTotal col-10").html(`<p>Total Compra $ ${sumall.toFixed(2)}</p>`) // los muestro en el HTML
     }
 }
-
-
-function restaTotalCarrito(e){
+function restaTotalCarrito(id){
+    console.log(id)
     // tomo el precio de la linea que quiero borrar y lo divido por la cantidad
-    let precio = parseInt(e.target.parentNode.parentNode.children[2].children[0].innerHTML.slice(2))/parseInt(e.target.parentNode.parentNode.children[1].innerText.slice(1)) 
+    let precio = parseInt($(`#precioTotal${id}`)[0].innerText.slice(2))/parseInt($(`#cantidad${id}`)[0].innerText.slice(1)) 
     // tomo el subtotal actual
-    let total = parseInt(e.target.parentNode.parentNode.parentNode.parentNode.parentNode.children[2].children[0].innerHTML.slice(14)) 
+    let total = parseInt($("#textoTotal")[0].innerText.slice(14)) 
     totalResta = total - precio;     // los resto y lo meto en una variable
-    $('#textoTotal').addClass("textoTotal col-10").html(`<p>Total Compra $ ${totalResta.toFixed(2)}</p>`) // antes de que se borre la linea muestro el subtotal nuevo
+    $('#textoTotal').addClass("textoTotal col-10").html(`<p>Total Compra $ ${totalResta.toFixed(2)}</p>`) 
+    // antes de que se borre la linea muestro el subtotal nuevo
 }
