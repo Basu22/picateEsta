@@ -208,34 +208,39 @@
 .navegadorHamburguesa {
   display: none; }
 
-.contenedorCabecera {
-  margin-top: 20px; }
-  .contenedorCabecera .filaHeader {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row; }
-    .contenedorCabecera .filaHeader .columnaNavegador {
-      align-self: center; }
-      .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav {
-        border-radius: 20px; }
-        .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul {
-          font-size: 1.5rem;
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          flex-direction: row;
-          height: auto;
-          list-style: none;
-          align-content: stretch; }
-          .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul .carritoCompra {
-            height: 7vh; }
-        .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav a {
-          text-decoration: none;
-          color: #000; }
-    .contenedorCabecera .filaHeader .logoCabecera {
-      border-radius: 50px;
-      height: 20vh; }
+header {
+  align-self: flex-start;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+  background-color: #ffff; }
+  header .contenedorCabecera {
+    margin-top: 20px; }
+    header .contenedorCabecera .filaHeader {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      header .contenedorCabecera .filaHeader .columnaNavegador {
+        align-self: center; }
+        header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav {
+          border-radius: 20px; }
+          header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul {
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: auto;
+            list-style: none; }
+            header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul .carritoCompra {
+              height: 7vh; }
+          header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav a {
+            text-decoration: none;
+            color: #000; }
+      header .contenedorCabecera .filaHeader .logoCabecera {
+        border-radius: 50px;
+        height: 20vh; }
 
 .contenedorParrafo {
   display: flex;
@@ -696,18 +701,18 @@ footer {
     height: 7vh; } }
 
 @media only screen and (max-width: 769px) {
-  .contenedorCabecera .contenedorImagen {
+  header .contenedorCabecera .contenedorImagen {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     flex-direction: row; }
-  .contenedorCabecera .filaHeader {
+  header .contenedorCabecera .filaHeader {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
     flex-direction: row-reverse; }
-  .contenedorCabecera .contenedorNav {
+  header .contenedorCabecera .contenedorNav {
     display: none; }
   .textoPie {
     text-align: center; }

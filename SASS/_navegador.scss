@@ -3,34 +3,42 @@
     display: none;
 }
 
-.contenedorCabecera{
-    margin-top: 20px;
-    .filaHeader{
-        @include flexbox_justify(space-between,wrap,row);
-        .columnaNavegador{
-            align-self: center;
-            .contenedorNav{
-                border-radius: $bordes-redondeados;
-                ul{
-                    font-size: map-get($tamañoTexto, tamañoNav);
-                    @include flexbox_justify(space-between,wrap,row);
-                    height: auto;
-                    list-style: none;
-                    align-content: stretch;
-                    .carritoCompra{
-                        height: 7vh;
+
+header{
+    align-self: flex-start;
+    position: sticky;
+    top:0px;
+    z-index: 99999;
+    background-color: #ffff;
+    .contenedorCabecera{
+        margin-top: 20px;
+        .filaHeader{
+            @include flexbox_justify(space-between,wrap,row);
+            .columnaNavegador{
+                align-self: center;
+                .contenedorNav{
+                    border-radius: $bordes-redondeados;
+                    ul{
+                        font-size: map-get($tamañoTexto, tamañoNav);
+                        @include flexbox_justify(space-between,wrap,row);
+                        height: auto;
+                        list-style: none;
+                        .carritoCompra{
+                            height: 7vh;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #000;
                     }
                 }
-                a{
-                    text-decoration: none;
-                    color: #000;
-                }
             }
-        }
-        .logoCabecera{
-            border-radius: 50px;
-            height: 20vh;
+            .logoCabecera{
+                border-radius: 50px;
+                height: 20vh;
+            }
         }
     }
 }
+
 

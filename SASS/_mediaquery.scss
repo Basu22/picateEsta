@@ -25,18 +25,21 @@
 }
 
 @media only screen and (max-width:769px){
-    .contenedorCabecera{
-        .contenedorImagen{
-            @include flexbox_justify(flex-end,wrap,row);
-        }
-        .filaHeader{
-            @include flexbox_justify(space-between,wrap,row);
-            flex-direction: row-reverse;
-        }
-        .contenedorNav{
-            display: none;
+    header{
+        .contenedorCabecera{
+            .contenedorImagen{
+                @include flexbox_justify(flex-end,wrap,row);
+            }
+            .filaHeader{
+                @include flexbox_justify(space-between,wrap,row);
+                flex-direction: row-reverse;
+            }
+            .contenedorNav{
+                display: none;
+            }
         }
     }
+
     
     .textoPie{
         text-align: center;
