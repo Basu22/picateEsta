@@ -33,6 +33,17 @@
             .filaHeader{
                 @include flexbox_justify(space-between,wrap,row);
                 flex-direction: row-reverse;
+                .columnaNavegador{
+                    .navegadorHamburguesa{
+                        @include hamburguesa;
+                        @include flexbox_justify (space-between,wrap,row);
+                        a{
+                            .carritoCompra{
+                                height: 7vh;
+                            }
+                        }
+                    }
+                }
             }
             .contenedorNav{
                 display: none;
@@ -52,15 +63,7 @@
         padding-bottom: 20px;
     }
 
-    .navegadorHamburguesa{
-        @include hamburguesa;
-        @include flexbox_justify (space-between,wrap,row);
-        a{
-            img{
-                height: 10vh;
-            }
-        }
-    }
+
     
         /* NOSOTROS */
         .fondoNosotrosuno{
@@ -133,6 +136,7 @@
         }
     }
     
+header{
     .contenedorCabecera{
         .filaHeader{
             .logoCabecera{
@@ -140,6 +144,8 @@
             }
         }
     }
+}
+
     .articuloProductos{
         .imgProductos{
             height: 300px;

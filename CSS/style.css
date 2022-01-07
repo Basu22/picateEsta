@@ -157,24 +157,6 @@
   .carousel-inner img {
     filter: saturate(1.8); }
 
-.filaClasica {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 25px 0; }
-  .filaClasica .picadaIndex {
-    filter: saturate(1.8); }
-
-.filaPremium {
-  margin: 25px 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-direction: row; }
-  .filaPremium .picadaIndex {
-    filter: saturate(1.8); }
-
 .contenedorIconos {
   border-top: 1px #000 solid;
   border-bottom: 1px #000 solid;
@@ -374,6 +356,7 @@ header {
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -394,6 +377,7 @@ header {
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -414,6 +398,7 @@ header {
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -434,6 +419,7 @@ header {
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -454,6 +440,7 @@ header {
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -474,6 +461,7 @@ header {
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -514,6 +502,22 @@ header {
     height: 10vh; }
   .filaCarrito #cantidadPicadas {
     font-size: 2rem; }
+
+.filaClasica {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .filaClasica .picadaIndex {
+    filter: saturate(1.8); }
+
+.filaPremium {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .filaPremium .picadaIndex {
+    filter: saturate(1.8); }
 
 .textoContacto .parrafoContacto {
   margin: 1% 0;
@@ -712,6 +716,37 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     flex-direction: row-reverse; }
+    header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa {
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .listadoHamburguesa {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 90vw;
+        height: auto;
+        list-style: none;
+        font-size: 1.5rem;
+        transition: height 2s ease;
+        z-index: 99999;
+        padding-left: 0; }
+        header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .listadoHamburguesa li {
+          text-align: center;
+          padding-top: 15px; }
+          header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .listadoHamburguesa li a {
+            text-decoration: none;
+            color: #fff; }
+      header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .checkHamburguesa {
+        display: none; }
+        header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .checkHamburguesa:checked ~ .listadoHamburguesa {
+          display: block;
+          position: absolute; }
+      header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .imgHamburguesa {
+        height: 5vh; }
+      header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa a .carritoCompra {
+        height: 7vh; }
   header .contenedorCabecera .contenedorNav {
     display: none; }
   .textoPie {
@@ -720,37 +755,6 @@ footer {
     height: 10vh; }
   .picadaIndex {
     padding-bottom: 20px; }
-  .navegadorHamburguesa {
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row; }
-    .navegadorHamburguesa .listadoHamburguesa {
-      display: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 90vw;
-      height: auto;
-      list-style: none;
-      font-size: 1.5rem;
-      transition: height 2s ease;
-      z-index: 99999;
-      padding-left: 0; }
-      .navegadorHamburguesa .listadoHamburguesa li {
-        text-align: center;
-        padding-top: 15px; }
-        .navegadorHamburguesa .listadoHamburguesa li a {
-          text-decoration: none;
-          color: #fff; }
-    .navegadorHamburguesa .checkHamburguesa {
-      display: none; }
-      .navegadorHamburguesa .checkHamburguesa:checked ~ .listadoHamburguesa {
-        display: block;
-        position: absolute; }
-    .navegadorHamburguesa .imgHamburguesa {
-      height: 5vh; }
-    .navegadorHamburguesa a img {
-      height: 10vh; }
   /* NOSOTROS */
   .fondoNosotrosuno {
     margin-bottom: 10px; }
@@ -789,7 +793,7 @@ footer {
 @media all and (max-width: 426px) {
   .navegadorHamburguesa a img {
     height: 5vh; }
-  .contenedorCabecera .filaHeader .logoCabecera {
+  header .contenedorCabecera .filaHeader .logoCabecera {
     height: 10vh; }
   .articuloProductos .imgProductos {
     height: 300px;

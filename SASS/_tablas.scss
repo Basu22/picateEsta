@@ -193,3 +193,17 @@
         font-size: 2rem;
     }
 }
+
+.filaClasica{
+    @include flexbox_justify (space-evenly,wrap,row);
+    .picadaIndex{
+        filter:$sautarcion;
+    }
+}
+
+.filaPremium{
+    @include flexbox_justify (space-evenly,wrap,row);
+    .picadaIndex{
+        filter:$sautarcion;
+    }
+}

@@ -43,6 +43,7 @@ $coloresMaps:(
     border: 1px #000 solid;
     border-radius: 20px;
     padding: 2px;
+    margin-bottom: 5%;
 }
 
 @mixin flexbox_justify ($justify, $wrap, $direction) {

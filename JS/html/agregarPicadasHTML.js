@@ -2,7 +2,7 @@
 function agregarPicada(arrayPicada){
 
     for (const picada of arrayPicada) { // con un for armo un bucle para ingresar cada elemento
-        let lineaCarrito =$(`<article class = "articuloTabla${picada.comen}${picada.tipo.slice(0,1)} col-md-6 col-lg-12 mt-4">
+        let lineaCarrito =$(`<article class = "articuloTabla${picada.comen}${picada.tipo.slice(0,1)} col-md-6 col-lg-12 ">
                                 <article class="articuloC${picada.comen}P${picada.pican}${picada.tipo.slice(0,1)}">
                                     <section class="row filaContenidoTablas">
                                         <article class="col-12">

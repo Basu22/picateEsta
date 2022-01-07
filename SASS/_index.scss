@@ -24,22 +24,6 @@
     }
 }
 
-.filaClasica{
-    @include flexbox_justify (space-evenly,wrap,row);
-    margin: 25px 0;
-    .picadaIndex{
-        filter:$sautarcion;
-    }
-}
-
-.filaPremium{
-    margin: 25px 0;
-    @include flexbox_justify (space-evenly,wrap,row);
-    .picadaIndex{
-        filter:$sautarcion;
-    }
-}
-
 .contenedorIconos{
     border-top: 1px #000 solid;
     border-bottom: 1px #000 solid;
