@@ -22,13 +22,14 @@ function textoCarrito(arrayCarrito){
                                                         <p id="precioTotal${carrito.id}">$ ${carrito.subtotal.toFixed(2)}</p>
                                                     </article>
                                                     <article class="borrarCarrito col-lg-1">
-                                                        <img class="logoFace" id="restar${carrito.id}" src="./img/carrito/restaCarrito.png" alt="">
+                                                        <img class="logoFace" id="restar${carrito.id}" src="./CONTENIDO/carrito/img/restaCarrito.png" alt="">
                                                     </article>
                                                 </section>
                                         </section>`);
         }
     }
 }
+
 textoCarrito(carritoCompras);
 sumaTotalCarrito()
 

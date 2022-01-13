@@ -53,5 +53,18 @@
 }
 
 
+.filaClasica{
+    @include flexbox_justify (space-evenly,wrap,row);
+    .picadaIndex{
+        filter:$sautarcion;
+    }
+}
 
+.filaPremium{
+    margin-top: 15px;
+    @include flexbox_justify (space-evenly,wrap,row);
+    .picadaIndex{
+        filter:$sautarcion;
+    }
+}
 

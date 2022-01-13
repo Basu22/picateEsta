@@ -187,6 +187,23 @@
     .contenedorIconos .contenedorArticulo .iconoRegalo {
       height: 15vh; }
 
+.filaClasica {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .filaClasica .picadaIndex {
+    filter: saturate(1.8); }
+
+.filaPremium {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .filaPremium .picadaIndex {
+    filter: saturate(1.8); }
+
 .navegadorHamburguesa {
   display: none; }
 
@@ -215,14 +232,36 @@ header {
             flex-direction: row;
             height: auto;
             list-style: none; }
+            header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul .avisoCarrito {
+              position: absolute;
+              padding: 10px;
+              top: 70%;
+              left: 80%;
+              background: #000;
+              color: #ffff;
+              display: none;
+              border-radius: 5%; }
             header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav ul .carritoCompra {
               height: 7vh; }
           header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav a {
             text-decoration: none;
             color: #000; }
+            header .contenedorCabecera .filaHeader .columnaNavegador .contenedorNav a #cantidadCarrito {
+              position: absolute;
+              padding: 0 15px;
+              color: #fff;
+              top: 20%;
+              left: 95%;
+              border-radius: 90%;
+              background: red;
+              display: none; }
       header .contenedorCabecera .filaHeader .logoCabecera {
         border-radius: 50px;
         height: 20vh; }
+
+.headerScroll {
+  max-height: 7vh;
+  transition: max-height 4s ease 4s; }
 
 .contenedorParrafo {
   display: flex;
@@ -503,22 +542,6 @@ header {
   .filaCarrito #cantidadPicadas {
     font-size: 2rem; }
 
-.filaClasica {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-direction: row; }
-  .filaClasica .picadaIndex {
-    filter: saturate(1.8); }
-
-.filaPremium {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-direction: row; }
-  .filaPremium .picadaIndex {
-    filter: saturate(1.8); }
-
 .textoContacto .parrafoContacto {
   margin: 1% 0;
   padding: 1% 0;
@@ -717,34 +740,10 @@ footer {
     flex-direction: row;
     flex-direction: row-reverse; }
     header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa {
-      display: block;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       flex-direction: row; }
-      header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .listadoHamburguesa {
-        display: none;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 90vw;
-        height: auto;
-        list-style: none;
-        font-size: 1.5rem;
-        transition: height 2s ease;
-        z-index: 99999;
-        padding-left: 0; }
-        header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .listadoHamburguesa li {
-          text-align: center;
-          padding-top: 15px; }
-          header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .listadoHamburguesa li a {
-            text-decoration: none;
-            color: #fff; }
-      header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .checkHamburguesa {
-        display: none; }
-        header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .checkHamburguesa:checked ~ .listadoHamburguesa {
-          display: block;
-          position: absolute; }
-      header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa .imgHamburguesa {
-        height: 5vh; }
       header .contenedorCabecera .filaHeader .columnaNavegador .navegadorHamburguesa a .carritoCompra {
         height: 7vh; }
   header .contenedorCabecera .contenedorNav {

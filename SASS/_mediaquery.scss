@@ -35,7 +35,6 @@
                 flex-direction: row-reverse;
                 .columnaNavegador{
                     .navegadorHamburguesa{
-                        @include hamburguesa;
                         @include flexbox_justify (space-between,wrap,row);
                         a{
                             .carritoCompra{

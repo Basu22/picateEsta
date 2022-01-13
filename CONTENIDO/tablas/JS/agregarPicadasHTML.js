@@ -2,11 +2,11 @@
 function agregarPicada(arrayPicada){
 
     for (const picada of arrayPicada) { // con un for armo un bucle para ingresar cada elemento
-        let lineaCarrito =$(`<article class = "articuloTabla${picada.comen}${picada.tipo.slice(0,1)} col-md-6 col-lg-12 ">
+        let lineaCarrito =$(`<article class = "articuloTabla${picada.comen}${picada.tipo.slice(0,1)} col-md-6 col-lg-12 mt-4">
                                 <article class="articuloC${picada.comen}P${picada.pican}${picada.tipo.slice(0,1)}">
                                     <section class="row filaContenidoTablas">
                                         <article class="col-12">
-                                            <img class="img-fluid" src="./img/tablas/C${picada.comen}P${picada.pican}${picada.tipo.slice(0,1)}.png" alt="Presentacion Tabla ${picada.tipo} Comen ${picada.comen} Pican ${picada.pican}" loading="lazy"> 
+                                            <img class="img-fluid" src="./CONTENIDO/tablas/img/C${picada.comen}P${picada.pican}${picada.tipo.slice(0,1)}.png" alt="Presentacion Tabla ${picada.tipo} Comen ${picada.comen} Pican ${picada.pican}" loading="lazy"> 
                                         </article>
                                         <article  class="col-12">
                                             <h5>TABLA ${picada.tipo}</h5>
@@ -22,13 +22,13 @@ function agregarPicada(arrayPicada){
                                         </article>
                                         <section  class="col-12 filaCarrito">
                                             <article class="col-2">   
-                                                <img class="logoFace" id="add${picada.id}" src="./img/carrito/sumaCarrito.png" alt="">
+                                                <img class="logoFace" id="add${picada.id}" src="./CONTENIDO/carrito/img/sumaCarrito.png" alt="">
                                             </article>
                                             <article class="cantidadPedido col-3 col-lg-1">
                                                 <p id="cantidad${picada.id}" class="cantidadPedido"></p>
                                             </article>
                                             <article class="borrarCarrito col-lg-1">
-                                                <img class="logoFace" id="resta${picada.id}" src="./img/carrito/restaCarrito.png" alt="">
+                                                <img class="logoFace" id="resta${picada.id}" src="./CONTENIDO/carrito/img/restaCarrito.png" alt="">
                                             </article>
                                         </section>
                                     </section>

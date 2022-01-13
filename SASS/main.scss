@@ -1,15 +1,11 @@
 @import "SASS/variables";
-
-
-@import "SASS/index";
-@import "SASS/navegador";
-@import "SASS/nosotros";
-@import "SASS/productos";
-@import "SASS/tablas";
-@import "SASS/contactenos";
-@import "SASS/carrito";
-@import "SASS/footer";
+@import "CONTENIDO/index/SASS/index";
+@import "CONTENIDO/navegador/SASS/navegador";
+@import "CONTENIDO/nosotros/SASS/nosotros";
+@import "CONTENIDO/productos/SASS/productos";
+@import "CONTENIDO/tablas/SASS/tablas";
+@import "CONTENIDO/contactenos/SASS/contactenos";
+@import "CONTENIDO/carrito/SASS/carrito";
+@import "CONTENIDO/footer/SASS/footer";
 @import "SASS/transform";
 @import "SASS/mediaquery";
-
-

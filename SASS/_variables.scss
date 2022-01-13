@@ -60,40 +60,6 @@ $coloresMaps:(
     flex-direction: $direction;
 }
 
-@mixin hamburguesa{
-    display: block;
-    .listadoHamburguesa{
-        display: none;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 70%;
-        height: 100vh;
-        list-style: none;
-        font-size: map-get($tamañoTexto, tamañoNav);
-        transition: height 2s ease ;
-        z-index: 999999;
-        top:10%;
-        li {
-            padding-top: 15px;            
-            a{
-                text-decoration: none;
-                color: #fff;
-            }
-            .carritoCompra{
-                height: 7vh;
-            }
-        }
-    }
-    .checkHamburguesa{
-        display:none;
-        &:checked  ~ .listadoHamburguesa{
-            display:block;
-            position: absolute;
-        }
-    }
-    .imgHamburguesa{
-        height: $menuHamburguesa;
-    }
-}
 
 @mixin imgResponsive {
     max-width: 100%;

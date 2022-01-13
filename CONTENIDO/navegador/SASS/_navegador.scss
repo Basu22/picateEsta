@@ -23,6 +23,16 @@ header{
                         @include flexbox_justify(space-between,wrap,row);
                         height: auto;
                         list-style: none;
+                        .avisoCarrito{
+                            position:absolute;
+                            padding: 10px;
+                            top:70%;
+                            left:80%;
+                            background: #000;
+                            color: #ffff;
+                            display: none;
+                            border-radius: 5%;
+                        }
                         .carritoCompra{
                             height: 7vh;
                         }
@@ -30,6 +40,16 @@ header{
                     a{
                         text-decoration: none;
                         color: #000;
+                        #cantidadCarrito{
+                            position:absolute;
+                            padding: 0 15px;
+                            color: #fff;
+                            top:20%;
+                            left:95%;
+                            border-radius: 90%;
+                            background: red;
+                            display: none;
+                        }
                     }
                 }
             }
@@ -42,3 +62,7 @@ header{
 }
 
 
+.headerScroll{
+    max-height: 7vh;
+    transition: max-height 4s ease 4s;
+}
