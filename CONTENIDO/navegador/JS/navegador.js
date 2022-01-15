@@ -68,20 +68,20 @@ if(cantidad>0){
 
 //ANIMACION HEADER
     $(window).on("scroll",function(){
-        cabecera=$("header").position().top
-        estoy=$(this).scrollTop()
-    if (estoy==cabecera){
-        if(flag){
-                $(".filaHeader").css("border-bottom","solid 1px grey");
-                $(".logoCabecera").animate({height:'100px'},"fast");
-            flag=false; // armo un flag para que no quede ejecutando un loop interminable
+        if (window.matchMedia('(min-width: 768px)').matches) { // observo el cambio del window para ver si animo o no
+            cabecera=$("header").position().top
+            estoy=$(this).scrollTop()
+            if (estoy==cabecera && flag){
+                    $(".filaHeader").css("border-bottom","solid 1px grey");
+                    $(".logoCabecera").animate({height:'100px'},"fast");
+                    flag=false; // armo un flag para que no quede ejecutando un loop interminable
+            }else if (estoy<cabecera){
+                $(".filaHeader").removeAttr("style");
+                $(".logoCabecera").animate({height:'20vh', overflow:'auto'},"fast");
+                flag = true;
             }
-        }else if (estoy<cabecera){
-            $(".filaHeader").removeAttr("style");
-            $(".logoCabecera").animate({height:'20vh', overflow:'auto'},"fast");
-            flag = true;
         }
-    
+        
     })
 
 
