@@ -1,0 +1,26 @@
+carrousel=[
+    {
+        id:1,
+        img:"./CONTENIDO/index/img/carousel/carrousel1-min.jpg"
+    },
+    {
+        id:2,
+        img:"./CONTENIDO/index/img/carousel/carrousel2-min.jpg"
+    },
+    {
+        id:3,
+        img:"./CONTENIDO/index/img/carousel/carrousel3-min.jpg"
+    },
+    {
+        id:4,
+        img:"./CONTENIDO/index/img/carousel/carrousel4-min.jpg"
+    },
+    {
+        id:5,
+        img:"./CONTENIDO/index/img/carousel/carrousel5-min.jpg"
+    },
+    {
+        id:6,
+        img:"./CONTENIDO/index/img/carousel/carrousel6-min.jpg"
+    }
+]
